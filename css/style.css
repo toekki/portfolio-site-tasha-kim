@@ -1,0 +1,13 @@
+.logo {
+  background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
+  width: 72px;
+  height: 79px;
+  transition: 500ms ease-in-out;
+}
+
+.logo:hover {
+  background: url("../img/1-home/1-imgs/1-tk-logo-blk.svg") no-repeat;
+  width: 72px;
+  height: 79px;
+  transition: 500ms ease-in-out;
+}
