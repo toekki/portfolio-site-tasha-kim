@@ -12,8 +12,9 @@ Accent Color (Yellow): #F7F000;
 h4-mukta-font-tools;gray
 */
 
-header {
-  background-color: #f5f5f5;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -57,6 +58,7 @@ h4 {
   width: 42px;
   height: 46px;
   transition: 350ms ease-in-out;
+  margin: 0 auto;
 }
 
 .logo:hover {
@@ -95,7 +97,7 @@ a:active {
 
 .button {
   /* KEEP THESE BUTTON RULES AT THE END OR TOWARDS THE BOTTOM! */
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block; /* note the <a> tag is inline by default */
   background-color: #ffffff;
   color: #000000; /* needed to override the default link color */
   font-weight: 300;
