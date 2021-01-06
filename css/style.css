@@ -15,6 +15,7 @@ h4-mukta-font-tools;gray
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -258,4 +259,10 @@ a:active {
   width: 30px;
   height: 30px;
   transition: 250ms ease-in-out;
+}
+
+/* LAYOUT STYLING */
+
+.container {
+  padding: 0 15px;
 }
