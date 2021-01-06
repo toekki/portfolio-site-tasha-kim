@@ -13,6 +13,8 @@ h4-mukta-font-tools;gray
 */
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -267,7 +269,7 @@ a:active {
 }
 
 .row {
-  margin: 50px 0;
+  margin: 1px 0;
 }
 
 #hero .row {
