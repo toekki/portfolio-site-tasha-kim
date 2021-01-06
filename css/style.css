@@ -264,11 +264,17 @@ a:active {
 /* LAYOUT STYLING */
 
 .container {
+  width: 85%;
+  margin: auto;
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 50px 0;
+}
+#hero .row {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #000000;
 }
 #work .row {
   padding-bottom: 25px;
