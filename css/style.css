@@ -13,8 +13,6 @@ h4-mukta-font-tools;gray
 */
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -275,6 +273,10 @@ a:active {
 #hero .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #000000;
+}
+
+#hero h1 {
+  text-align: center;
 }
 #work .row {
   padding-bottom: 25px;
