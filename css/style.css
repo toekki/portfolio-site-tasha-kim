@@ -267,7 +267,7 @@ a:active {
 }
 .container {
   margin: auto;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .row {
@@ -323,7 +323,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid red;
 }
 
