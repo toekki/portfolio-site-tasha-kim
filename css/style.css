@@ -259,7 +259,7 @@ a:active {
   transition: 250ms ease-in-out;
 }
 
-/* LAYOUT STYLING */
+/* ------------------------------ layout styling ------------------------------ */
 
 .maxWidth {
   max-width: 1200px;
@@ -290,7 +290,7 @@ a:active {
   border-bottom: 3px solid #000000;
 }
 
-/* hover animation */
+/* ------------------------------ hover animation ------------------------------ */
 .imageStrip {
   width: 140px;
 }
