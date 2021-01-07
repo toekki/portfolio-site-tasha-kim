@@ -13,8 +13,6 @@ h4-mukta-font-tools;gray
 */
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -263,13 +261,17 @@ a:active {
 
 /* LAYOUT STYLING */
 
+.maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .container {
   margin: auto;
   padding: 0 15px;
 }
 
 .row {
-  margin: 1px 0;
+  margin: 50px 0;
 }
 
 #hero .row {
@@ -286,4 +288,78 @@ a:active {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #000000;
+}
+
+/* hover animation */
+.imageStrip {
+  width: 140px;
+}
+
+.displayOnHover {
+  display: none;
+  transition: 200ms;
+}
+
+.onHover:hover .displayOnHover {
+  display: block;
+  transition: 200ms;
+}
+.onHover:hover .hideOnHover {
+  display: none;
+  transition: 200ms;
+}
+
+.projectButton {
+  position: relative;
+}
+
+.projectButton .yellowBox {
+  position: absolute;
+  width: 90px;
+  left: 12px;
+  top: -16px;
+  z-index: -1;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
 }
