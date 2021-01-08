@@ -68,22 +68,36 @@ h4 {
   height: 43px;
   transition: 350ms ease-in-out;
   margin-top: 24px;
-  padding: 15px 0;
-  position: fixed;
 }
 
 .logo:hover {
   background: url("../img/1-home/1-imgs/1-tk-logo-blk.svg") no-repeat;
-  width: 42px;
-  height: 46px;
+  width: 40px;
+  height: 43px;
   transition: 350ms ease-in-out;
 }
 
 .logo:active {
   background: url("../img/1-home/1-imgs/1-tk-logo-yellow.svg") no-repeat;
-  width: 42px;
-  height: 46px;
+  width: 40px;
+  height: 43px;
   transition: 0.2s opacity;
+}
+
+.menu {
+  background: url("../img/1-home/1-imgs/menu.svg") no-repeat;
+  width: 26px;
+  height: 19px;
+  transition: 150ms ease-in-out;
+  margin-top: 24px;
+  float: right;
+}
+
+.menu:hover {
+  background: url("../img/1-home/1-imgs/menu-hover.svg") no-repeat;
+  width: 26px;
+  height: 23px;
+  transition: 150ms ease-in-out;
 }
 
 img {
