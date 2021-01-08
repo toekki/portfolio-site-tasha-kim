@@ -9,13 +9,16 @@ Accent Color (Mid-Gray): #9BA1A3;
 Accent Color (Yellow): #F7F000;
 */
 /*
+h1 - name & main project titles
+h2 - subtitles
+h3 - 
 h4-proximanova-all-caps-font-app-tools;gray
 */
 
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -304,11 +307,11 @@ a:active {
 }
 
 .row {
-  margin: 50px 0;
+  margin: 15px 0;
 }
 
 #hero .row {
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   border-bottom: 3px solid #000000;
 }
 #hero h1 {
@@ -319,7 +322,7 @@ a:active {
 }
 
 #work .row {
-  padding-bottom: 25px;
+  padding-bottom: 5px;
 }
 
 /* ----------------------------- HOVER ANIMATION ----------------------------- */
