@@ -74,7 +74,8 @@ h4 {
   width: 40px;
   height: 43px;
   transition: 350ms ease-in-out;
-  margin-top: 24px;
+  margin-top: 16px;
+  position: fixed;
 }
 .logo:hover {
   background: url("../img/1-home/1-imgs/1-tk-logo-blk.svg") no-repeat;
@@ -315,12 +316,9 @@ a:active {
   margin: 0px 0px;
 }
 
-#hero .row {
-  padding-bottom: 50px;
-  border-bottom: 3px solid #000000;
-}
 #hero h1 {
   text-align: left;
+  padding-top: 175px;
 }
 #hero p {
   text-align: left;
