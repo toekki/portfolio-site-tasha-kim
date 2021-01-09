@@ -92,7 +92,7 @@ h4 {
 .menu {
   background: url("../img/1-home/1-imgs/menu.svg") no-repeat;
   width: 26px;
-  height: 18px;
+  height: 16px;
   transition: 150ms ease-in-out;
   margin-top: 24px;
   float: right;
@@ -133,6 +133,19 @@ a:active {
   color: #4d4d4d;
 }
 
+.arrowup {
+  background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
+  width: 26px;
+  height: 23px;
+  transition: 150ms ease-in-out;
+}
+.arrowup:hover {
+  background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
+  width: 30px;
+  height: 27px;
+  transition: 150ms ease-in-out;
+}
+
 .button {
   /* KEEP THESE BUTTON RULES AT THE END OR TOWARDS THE BOTTOM! */
   display: inline-block; /* note the <a> tag is inline by default */
@@ -153,19 +166,6 @@ a:active {
 .button:active {
   color: #f7f000;
   border: 2px solid #f7f000;
-}
-
-.arrowup {
-  background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
-  width: 26px;
-  height: 23px;
-  transition: 150ms ease-in-out;
-}
-.arrowup:hover {
-  background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
-  width: 30px;
-  height: 27px;
-  transition: 150ms ease-in-out;
 }
 
 .knowme {
@@ -312,7 +312,7 @@ a:active {
 }
 
 .row {
-  margin: 15px 0;
+  margin: 0px 0px;
 }
 
 #hero .row {
@@ -327,7 +327,7 @@ a:active {
 }
 
 #work .row {
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 /* ----------------------------- HOVER ANIMATION ----------------------------- */
