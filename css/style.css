@@ -100,7 +100,7 @@ h4 {
 .menu:hover {
   background: url("../img/1-home/1-imgs/menu-hover.svg") no-repeat;
   width: 26px;
-  height: 20px;
+  height: 22px;
   transition: 150ms ease-in-out;
 }
 
