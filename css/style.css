@@ -61,10 +61,6 @@ h4 {
   font-size: 0.8em;
 }
 
-header {
-  position: fixed;
-}
-
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
   width: 40px;
@@ -316,6 +312,14 @@ a:active {
 
 .row {
   margin: 0px 0px;
+}
+
+header {
+  position: fixed;
+}
+
+main {
+  padding-top: 150px;
 }
 
 .navigation {
