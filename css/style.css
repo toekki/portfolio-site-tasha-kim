@@ -30,20 +30,21 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 400;
-  line-height: 0.75;
+  line-height: 1;
 }
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1;
 }
 h4 {
   font-family: "proximanova-regular", sans-serif;
-  font-weight: 300;
-  color: #9ba1a3;
+  line-height: 1;
 }
 h4 {
   font-size: 0.8em;
+  font-weight: 300;
+  color: #9ba1a3;
 }
 
 body {
@@ -67,13 +68,16 @@ a:visited {
   /* visited link */
   color: #9ba1a3;
 }
-a:hover {
-  color: #f7f000;
+a:hover,
+a:focus {
+  /* focus is similar to hover but when targeted by the keyboard */
+  color: #ffffff;
   text-decoration: none; /* Underlining when hovering over a link */
 }
+
 a:active {
   /* selected link */
-  color: #9ba1a3;
+  color: #f7f000;
 }
 
 /* --------------------------------- HEADER --------------------------------- */
@@ -146,16 +150,6 @@ a:active {
   width: 30px;
   height: 27px;
   transition: 150ms ease-in-out;
-}
-
-.button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-}
-.button:active {
-  color: #f7f000;
-  border: 2px solid #f7f000;
 }
 
 .knowme {
@@ -316,7 +310,7 @@ a:active {
 .button {
   /* KEEP THESE BUTTON RULES AT THE END OR TOWARDS THE BOTTOM! */
   display: inline-block; /* note the <a> tag is inline by default */
-
+  background-color: none;
   color: #000000; /* needed to override the default link color */
   font-weight: 300;
   font-size: 13px;
@@ -324,6 +318,9 @@ a:active {
   border-radius: 0px;
   border: 1px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+.button:hover {
+  background-color: #000000;
 }
 
 /* ----------------------------- LAYOUT STYLING ----------------------------- */
@@ -457,3 +454,15 @@ main {
 .col-12 {
   width: 100%;
 }
+
+/* --- keep in case --- trash later-------------------------------------------
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:active {
+  color: #f7f000;
+  border: 2px solid #f7f000;
+}
+---------------------------------------------------------------------------- */
