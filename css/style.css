@@ -120,6 +120,12 @@ a:active {
   margin-top: 16px;
 }
 
+#custom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* ------------------------ NON-TRADITIONAL BUTTONS ------------------------- */
 /* ---------------- arrowup - knowme - email - linkedin - etc---------------- */
 
