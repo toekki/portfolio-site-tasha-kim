@@ -316,6 +316,7 @@ a:active {
 
 header {
   position: fixed;
+  width: 100%;
 }
 
 main {
