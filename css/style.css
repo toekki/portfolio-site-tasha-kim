@@ -136,6 +136,92 @@ a:active {
   justify-content: space-between;
 }
 
+/* ----------------------------- LAYOUT STYLING ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  margin: auto;
+  padding: 16px 16px;
+}
+
+.row {
+  margin: 0px 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+
+/* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+  padding: 90px 0px;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1 {
+  text-align: center;
+  margin: 0;
+}
+#hero p {
+  text-align: center;
+  margin: 0;
+}
+#work {
+  text-align: center;
+}
+#work .row {
+  padding-bottom: 0px;
+}
+
+/* ------------------------------ MENU SECTION ------------------------------ */
+/* -------------------------------------------------------------------------- */
+
+#menu .navigation {
+  padding: 90px 0;
+}
+
+.navigation {
+  text-align: center;
+  padding: 10% 0;
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+}
+
+/* -------------------------- IMGs HOVER ANIMATION --------------------------- */
+/* --------------------------------------------------------------------------- */
+
+.displayOnHover {
+  display: none;
+  transition: 200ms;
+}
+
+.onHover:hover .displayOnHover {
+  display: block;
+  transition: 200ms;
+}
+.onHover:hover .hideOnHover {
+  display: none;
+  transition: 200ms;
+}
+
 /* ------------------------ NON-TRADITIONAL BUTTONS ------------------------- */
 /* ---------------- arrowup - knowme - email - linkedin - etc---------------- */
 
@@ -321,92 +407,6 @@ a:active {
 }
 .button:hover {
   background-color: #000000;
-}
-
-/* ----------------------------- LAYOUT STYLING ----------------------------- */
-/* -------------------------------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.maxWidth {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.container {
-  margin: auto;
-  padding: 16px 16px;
-}
-
-.row {
-  margin: 0px 0px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-}
-
-main {
-  padding-top: 150px;
-}
-
-/* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
-/* -------------------------------------------------------------------------- */
-
-#hero {
-  padding: 90px 0px;
-  display: inline-block;
-  width: 100%;
-}
-#hero h1 {
-  text-align: center;
-  margin: 0;
-}
-#hero p {
-  text-align: center;
-  margin: 0;
-}
-#work {
-  text-align: center;
-}
-#work .row {
-  padding-bottom: 0px;
-}
-
-/* ------------------------------ MENU SECTION ------------------------------ */
-/* -------------------------------------------------------------------------- */
-
-#menu .navigation {
-  padding: 90px 0;
-}
-
-.navigation {
-  text-align: center;
-  padding: 10% 0;
-  list-style-type: none;
-  display: inline-block;
-  width: 100%;
-}
-
-/* -------------------------- IMGs HOVER ANIMATION --------------------------- */
-/* --------------------------------------------------------------------------- */
-
-.displayOnHover {
-  display: none;
-  transition: 200ms;
-}
-
-.onHover:hover .displayOnHover {
-  display: block;
-  transition: 200ms;
-}
-.onHover:hover .hideOnHover {
-  display: none;
-  transition: 200ms;
 }
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
