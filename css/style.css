@@ -145,10 +145,11 @@ body {
 
 .navigation {
   text-align: center;
-  padding-top: 120px;
+  padding-top: 165px;
   list-style-type: none;
   display: inline-block;
   width: 100%;
+  line-height: 1.75;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -382,8 +383,9 @@ img {
   width: 100%;
 }
 
+/* placeholder until I figure out how to do this
 .hiddenOnMobile {
-}
+}     */
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
