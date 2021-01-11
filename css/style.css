@@ -59,12 +59,6 @@ body {
 /* --------------------------------- HEADER --------------------------------- */
 /* ------------------------------ logo - menu ------------------------------- */
 
-header {
-  position: fixed;
-  width: 100%;
-  border-bottom: 3px solid #f7f000;
-}
-
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
   width: 40px;
@@ -115,9 +109,11 @@ header {
 /* -------------------------------------------------------------------------- */
 
 #hero {
+  margin: 0;
   padding: 180px 0px 90px 0px;
   display: block;
   width: 100%;
+  /* when I try to add this-- position: sticky; --- it freezes my header states -----*/
 }
 #hero h1 {
   text-align: left;
@@ -157,6 +153,25 @@ header {
   display: inline-block;
   width: 100%;
   line-height: 1.75;
+}
+
+/* ------------------------------ ABOUT ME PAGE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#about {
+  margin: 0;
+  padding: 180px 0px 90px 0px;
+  display: block;
+  width: 100%;
+  /* when I try to add this-- position: sticky; --- it freezes my header states -----*/
+}
+#about h1 {
+  text-align: left;
+  margin: 0;
+}
+#about p {
+  text-align: left;
+  margin: 0;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -231,6 +246,7 @@ header {
   width: 30px;
   height: 30px;
   transition: 250ms ease-in-out;
+  display: inline-block;
 }
 
 .email {
@@ -312,12 +328,19 @@ header {
   z-index: -1;
 }
 
-.yellowBoxMain {
+#hero .yellowBoxMain {
   position: absolute;
-  padding: 175px 0px 80px 0px;
   width: 148px;
   left: 12px;
-  top: -16px;
+  top: 155px;
+  z-index: -1;
+}
+
+#about .yellowBoxMain {
+  position: absolute;
+  width: 148px;
+  left: 12px;
+  top: 135px;
   z-index: -1;
 }
 
@@ -364,6 +387,14 @@ a:active {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+header {
+  margin-top: 10px;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #f7f000;
 }
 
 .maxWidth {
