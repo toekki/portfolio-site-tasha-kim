@@ -84,21 +84,13 @@ body {
   width: 26px;
   height: 16px;
   transition: 150ms ease-in-out;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 .menu:hover {
   background: url("../img/1-home/1-imgs/menu-hover.svg") no-repeat;
   width: 26px;
   height: 22px;
   transition: 150ms ease-in-out;
-}
-
-.menuX {
-  background: url("../img/1-home/1-imgs/menuX.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  transition: 150ms ease-in-out;
-  margin-top: 16px;
 }
 
 #custom-nav {
@@ -116,36 +108,40 @@ body {
 /* -------------------------------------------------------------------------- */
 
 #hero {
-  padding: 90px 0px;
+  padding: 40px 0px 90px 0px;
   display: inline-block;
   width: 100%;
 }
 #hero h1 {
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 #hero p {
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
 #work {
-  text-align: center;
+  text-align: left;
 }
 #work .row {
   padding-bottom: 0px;
 }
 
-/* ------------------------------ MENU SECTION ------------------------------ */
+/* ------------------------------- MENU PAGE -------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#menu .navigation {
-  padding: 90px 0;
+.menuX {
+  background: url("../img/1-home/1-imgs/menuX.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  transition: 150ms ease-in-out;
+  margin-top: 32px;
 }
 
 .navigation {
   text-align: center;
-  padding: 10% 0;
+  padding-top: 120px;
   list-style-type: none;
   display: inline-block;
   width: 100%;
