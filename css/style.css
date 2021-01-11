@@ -59,12 +59,19 @@ body {
 /* --------------------------------- HEADER --------------------------------- */
 /* ------------------------------ logo - menu ------------------------------- */
 
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid #f7f000;
+}
+
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
   width: 40px;
   height: 44px;
   transition: 350ms ease-in-out;
   margin-top: 16px;
+  padding-bottom: 50px;
 }
 .logo:hover {
   background: url("../img/1-home/1-imgs/1-tk-logo-blk.svg") no-repeat;
@@ -371,12 +378,6 @@ a:active {
 
 .row {
   margin: 0px 0px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  border-bottom: 3px solid #f7f000;
 }
 
 img {
