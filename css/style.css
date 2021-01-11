@@ -56,30 +56,6 @@ body {
   color: #000000;
 }
 
-img {
-  width: 100%;
-}
-
-a {
-  color: #000000;
-  text-decoration: none; /* No underlining */
-}
-a:visited {
-  /* visited link */
-  color: #9ba1a3;
-}
-a:hover,
-a:focus {
-  /* focus is similar to hover but when targeted by the keyboard */
-  color: #ffffff;
-  text-decoration: none; /* Underlining when hovering over a link */
-}
-
-a:active {
-  /* selected link */
-  color: #f7f000;
-}
-
 /* --------------------------------- HEADER --------------------------------- */
 /* ------------------------------ logo - menu ------------------------------- */
 
@@ -136,7 +112,7 @@ a:active {
   justify-content: space-between;
 }
 
-/* ----------------------------- LAYOUT STYLING ----------------------------- */
+/* -------------------------OVERALL LAYOUT STYLING -------------------------- */
 /* -------------------------------------------------------------------------- */
 
 * {
@@ -149,6 +125,7 @@ a:active {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .container {
   margin: auto;
   padding: 16px 16px;
@@ -167,6 +144,10 @@ main {
   padding-top: 150px;
 }
 
+img {
+  width: 100%;
+}
+
 /* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -183,6 +164,7 @@ main {
   text-align: center;
   margin: 0;
 }
+
 #work {
   text-align: center;
 }
@@ -260,116 +242,91 @@ main {
   transition: 150ms ease-in-out;
 }
 
-.email {
-  background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-email-icon.svg")
-    no-repeat;
+.email,
+.email:hover,
+.email:active,
+.linkedin,
+.linkedin:hover,
+.linkedin:active,
+.behance,
+.behance:hover,
+.behance:active,
+.dribbble,
+.dribbble:hover,
+.dribbble:active,
+.resume,
+.resume:hover,
+.resume:active {
   width: 30px;
   height: 30px;
   transition: 250ms ease-in-out;
+}
+
+.email {
+  background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-email-icon.svg")
+    no-repeat;
 }
 .email:hover {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-email-icon-blk.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .email:active {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-email-icon-yellow.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 
 .linkedin {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-linkedin-logo.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .linkedin:hover {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-linkedin-logo-blk.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .linkedin:active {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-linkedin-logo-yellow.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 
 .behance {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-behance-logo.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .behance:hover {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-behance-logo-blk.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .behance:active {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-behance-logo-yellow.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 
 .dribbble {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-dribbble-logo.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .dribbble:hover {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-dribbble-logo-blk.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .dribbble:active {
   background: url("../img/1-home/1-imgs/1-social-icon-imgs/1-dribbble-logo-yellow.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 
 .resume {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .resume:hover {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-blk.svg")
     no-repeat;
-  width: 80px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 .resume:active {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-yellow.svg")
     no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: 250ms ease-in-out;
 }
 
-/* -------------------------- VIEW PROJECT BUTTONS -------------------------- */
+/* -------------------- VIEW PROJECT BUTTONS / LINKS <a>--------------------- */
 /* ---------------------- including yellow-box related----------------------- */
 
 .projectButton {
@@ -407,6 +364,26 @@ main {
 }
 .button:hover {
   background-color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none; /* No underlining */
+}
+a:visited {
+  /* visited link */
+  color: #9ba1a3;
+}
+a:hover,
+a:focus {
+  /* focus is similar to hover but when targeted by the keyboard */
+  color: #ffffff;
+  text-decoration: none; /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #f7f000;
 }
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
