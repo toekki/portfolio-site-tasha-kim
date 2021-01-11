@@ -112,42 +112,6 @@ body {
   justify-content: space-between;
 }
 
-/* -------------------------OVERALL LAYOUT STYLING -------------------------- */
-/* -------------------------------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-.maxWidth {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container {
-  margin: auto;
-  padding: 16px 16px;
-}
-
-.row {
-  margin: 0px 0px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-}
-
-main {
-  padding-top: 150px;
-}
-
-img {
-  width: 100%;
-}
-
 /* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -220,26 +184,25 @@ img {
   transition: 150ms ease-in-out;
 }
 
-.knowme {
-  background: url("../img/1-home/1-imgs/1-knowme-imgs/1-knowme-center.svg")
-    no-repeat;
+.knowme,
+.knowme:hover,
+.knowme:active {
   width: 28px;
   height: 39px;
   transition: 150ms ease-in-out;
+}
+
+.knowme {
+  background: url("../img/1-home/1-imgs/1-knowme-imgs/1-knowme-center.svg")
+    no-repeat;
 }
 .knowme:hover {
   background: url("../img/1-home/1-imgs/1-knowme-imgs/1-knowme-right.svg")
     no-repeat;
-  width: 28px;
-  height: 39px;
-  transition: 150ms ease-in-out;
 }
 .knowme:active {
   background: url("../img/1-home/1-imgs/1-knowme-imgs/1-knowme-left.svg")
     no-repeat;
-  width: 28px;
-  height: 39px;
-  transition: 150ms ease-in-out;
 }
 
 .email,
@@ -384,6 +347,42 @@ a:focus {
 a:active {
   /* selected link */
   color: #f7f000;
+}
+
+/* -------------------------OVERALL LAYOUT STYLING -------------------------- */
+/* -------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: auto;
+  padding: 16px 16px;
+}
+
+.row {
+  margin: 0px 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 150px;
+}
+
+img {
+  width: 100%;
 }
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
