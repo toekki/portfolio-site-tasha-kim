@@ -116,7 +116,7 @@ header {
 
 #hero {
   padding: 180px 0px 90px 0px;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 #hero h1 {
@@ -372,7 +372,7 @@ a:active {
 }
 
 .container {
-  margin: auto;
+  margin: 0;
   padding: 16px 16px;
 }
 
@@ -393,8 +393,8 @@ img {
 
 [class*="col-"] {
   float: left;
-  padding: 16px 0;
-  border: 1px solid red;
+  padding: 0px 0;
+  border: 1px solid #f7f000;
 }
 
 .col-1 {
