@@ -9,6 +9,12 @@ Accent Color	(Light-Gray): #F5F5F5;
 Accent Color (Yellow): #F7F000;
 */
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 @font-face {
   font-family: "proximanova-regular";
   src: url("proximanova-regular-webfont.woff2") format("woff2"),
@@ -108,12 +114,20 @@ body {
 /* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#hero .yellowBoxMain {
+  position: relative;
+  width: 150px;
+  left: -5px;
+  top: -220px;
+  z-index: -1;
+  display: inline-block;
+}
+
 #hero {
   margin: 0;
-  padding: 180px 0px 90px 0px;
+  padding: 180px 0px 25px 0px;
   display: block;
   width: 100%;
-  /* when I try to add this-- position: sticky; --- it freezes my header states -----*/
 }
 #hero h1 {
   text-align: left;
@@ -123,16 +137,24 @@ body {
   text-align: left;
   margin: 0;
 }
+#hero .container {
+  margin: 0 16px;
+  display: inline-block;
+}
+
+.uiTitle {
+  padding-bottom: 8.5px;
+}
 
 #work {
   text-align: left;
 }
 #work .row {
-  padding-bottom: 75px;
+  padding-bottom: 56px;
 }
-
-.uiTitle {
-  padding-bottom: 8.5px;
+#work .container {
+  display: inline-block;
+  padding: 0px 16px;
 }
 
 /* ------------------------------- MENU PAGE -------------------------------- */
@@ -158,20 +180,49 @@ body {
 /* ------------------------------ ABOUT ME PAGE ----------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#about {
-  margin: 0;
-  padding: 180px 0px 90px 0px;
-  display: block;
-  width: 100%;
-  /* when I try to add this-- position: sticky; --- it freezes my header states -----*/
+#aboutHero .yellowBoxMain {
+  position: relative;
+  width: 150px;
+  left: -5px;
+  top: -108px;
+  z-index: -1;
+  display: inline-block;
 }
+#aboutHero {
+  margin: 0;
+  padding: 160px 16px 0px 16px;
+  display: inline-block;
+  width: 100%;
+}
+
+#about .container {
+  padding: 0 16px;
+}
+#about .row {
+  padding-top: 0px;
+}
+
 #about h1 {
   text-align: left;
   margin: 0;
+  display: inline-block;
 }
+
 #about p {
   text-align: left;
   margin: 0;
+  padding: 8px 0px;
+  display: inline-block;
+}
+
+.mePics1 {
+  z-index: -5;
+  position: relative;
+  display: in-block;
+  width: 100%;
+}
+.mePics2 {
+  width: 100%;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -191,7 +242,7 @@ body {
   transition: 200ms;
 }
 
-/* ------------------------ NON-TRADITIONAL BUTTONS ------------------------- */
+/* -------------------------- OTHER HOVER BUTTONS --------------------------- */
 /* ---------------- arrowup - knowme - email - linkedin - etc---------------- */
 
 .arrowup {
@@ -213,6 +264,7 @@ body {
   width: 28px;
   height: 39px;
   transition: 150ms ease-in-out;
+  margin: auto;
 }
 
 .knowme {
@@ -241,7 +293,6 @@ body {
 .dribbble:hover,
 .dribbble:active,
 .resume,
-.resume:hover,
 .resume:active {
   width: 30px;
   height: 30px;
@@ -307,14 +358,18 @@ body {
 .resume:hover {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-blk.svg")
     no-repeat;
+  width: 85px;
+  height: 30px;
+  transition: 250ms ease-in-out;
+  display: inline-block;
 }
 .resume:active {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-yellow.svg")
     no-repeat;
 }
 
-/* -------------------- VIEW PROJECT BUTTONS / LINKS <a>--------------------- */
-/* ---------------------- including yellow-box related----------------------- */
+/* -------------------------- VIEW PROJECT BUTTONS -------------------------- */
+/* -------------------------------------------------------------------------- */
 
 .projectButton {
   position: relative;
@@ -325,22 +380,6 @@ body {
   width: 80px;
   left: 20px;
   top: -16px;
-  z-index: -1;
-}
-
-#hero .yellowBoxMain {
-  position: absolute;
-  width: 148px;
-  left: 12px;
-  top: 155px;
-  z-index: -1;
-}
-
-#about .yellowBoxMain {
-  position: absolute;
-  width: 148px;
-  left: 12px;
-  top: 135px;
   z-index: -1;
 }
 
@@ -358,6 +397,55 @@ body {
 }
 .button:hover {
   background-color: #000000;
+}
+
+/* -------------------------OVERALL LAYOUT STYLING -------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 10px;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: none;
+}
+header .container {
+  padding: 0 16px;
+}
+
+footer .container {
+  display: inline-block;
+  padding: 48px 0 24px 0;
+  width: 100%;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+footer .social {
+  display: block;
+  margin: auto;
+}
+footer .container p {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/*  .container {
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: inline-block;
+}  */
+
+.row {
+  margin: 0px 0px;
 }
 
 a {
@@ -379,46 +467,6 @@ a:active {
   /* selected link */
   color: #f7f000;
 }
-
-/* -------------------------OVERALL LAYOUT STYLING -------------------------- */
-/* -------------------------------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-header {
-  margin-top: 10px;
-  position: fixed;
-  width: 100%;
-  padding-bottom: 16px;
-  border-bottom: 3px solid #f7f000;
-}
-
-.maxWidth {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.row {
-  margin: 0px 0px;
-}
-
-img {
-  width: 100%;
-}
-
-/* placeholder until I figure out how to do this
-.hiddenOnMobile {
-}     */
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
