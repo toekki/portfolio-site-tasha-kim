@@ -29,23 +29,21 @@ h3 {
   font-family: "Bebas Neue", serif;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.85;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.85;
 }
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  line-height: 1;
 }
 h4 {
   font-family: "proximanova-regular", sans-serif;
-  line-height: 1;
 }
 h4 {
   font-size: 0.8em;
@@ -65,13 +63,23 @@ body {
 /* --------------------------------- HEADER --------------------------------- */
 /* ------------------------------ logo - menu ------------------------------- */
 
+header {
+  position: fixed;
+  width: 100%;
+  padding: 18px 16px 18px 16px;
+  border-bottom: none;
+  display: inline-block;
+  background-color: #f7f000;
+}
+header .container {
+  background-color: beige;
+}
+
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
   width: 40px;
   height: 44px;
   transition: 350ms ease-in-out;
-  margin-top: 16px;
-  padding-bottom: 50px;
 }
 .logo:hover {
   background: url("../img/1-home/1-imgs/1-tk-logo-blk.svg") no-repeat;
@@ -91,7 +99,8 @@ body {
   width: 26px;
   height: 16px;
   transition: 150ms ease-in-out;
-  margin-top: 32px;
+  margin-top: 16px;
+  display: inline-block;
 }
 .menu:hover {
   background: url("../img/1-home/1-imgs/menu-hover.svg") no-repeat;
@@ -122,12 +131,8 @@ body {
   z-index: -1;
   display: inline-block;
 }
-
 #hero {
-  margin: 0;
-  padding: 180px 0px 25px 0px;
-  display: block;
-  width: 100%;
+  padding: 200px 0px 25px 16px;
 }
 #hero h1 {
   text-align: left;
@@ -136,10 +141,6 @@ body {
 #hero p {
   text-align: left;
   margin: 0;
-}
-#hero .container {
-  margin: 0 16px;
-  display: inline-block;
 }
 
 .uiTitle {
@@ -150,11 +151,47 @@ body {
   text-align: left;
 }
 #work .row {
-  padding-bottom: 56px;
+  padding-bottom: 48px;
 }
 #work .container {
   display: inline-block;
   padding: 0px 16px;
+  width: 100%;
+}
+
+#work .box-ad,
+#work .box-ff,
+#work .box-mf {
+  /*------- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ------- */
+  padding: 40px 16px 0px 16px;
+  background-color: white -5;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
+  -moz-box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
+  box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
+}
+#work .box-ct,
+#work .box-hh,
+#work .box-ms {
+  /*------- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ------- */
+  padding: 40px 16px 0px 16px;
+  background-color: white -5;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 90px;
+  -webkit-box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
+  -moz-box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
+  box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
+}
+
+#work h3 {
+  padding-top: 12px;
+}
+
+#work p {
+  padding: 1px 0 20px 0;
 }
 
 /* ------------------------------- MENU PAGE -------------------------------- */
@@ -211,7 +248,7 @@ body {
 #about p {
   text-align: left;
   margin: 0;
-  padding: 8px 0px;
+  padding: 8px 16px;
   display: inline-block;
 }
 
@@ -222,7 +259,7 @@ body {
   width: 100%;
 }
 .mePics2 {
-  width: 100%;
+  padding: 0 16px;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -379,7 +416,7 @@ body {
   position: absolute;
   width: 80px;
   left: 20px;
-  top: -16px;
+  top: -14px;
   z-index: -1;
 }
 
@@ -407,17 +444,6 @@ body {
   margin: 0 auto;
 }
 
-header {
-  margin-top: 10px;
-  position: fixed;
-  width: 100%;
-  padding-bottom: 16px;
-  border-bottom: none;
-}
-header .container {
-  padding: 0 16px;
-}
-
 footer .container {
   display: inline-block;
   padding: 48px 0 24px 0;
@@ -431,21 +457,11 @@ footer .social {
 }
 footer .container p {
   text-align: center;
+  padding-top: 3px;
 }
 
 img {
   width: 100%;
-}
-
-/*  .container {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: inline-block;
-}  */
-
-.row {
-  margin: 0px 0px;
 }
 
 a {
@@ -474,7 +490,7 @@ a:active {
 [class*="col-"] {
   float: left;
 
-  border: 1px solid #f7f000;
+  border: 1px solid #ffffff;
 }
 
 .col-1 {
