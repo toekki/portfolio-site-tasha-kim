@@ -39,7 +39,7 @@ h2 {
   line-height: 0.85;
 }
 h3 {
-  font-size: 1.25em;
+  font-size: 1.35em;
   font-weight: 400;
 }
 h4 {
@@ -69,11 +69,12 @@ header {
   padding: 18px 16px 18px 16px;
   border-bottom: none;
   display: inline-block;
-  background-color: #f7f000;
 }
+
+/* ------ delete this later? ------ unnecessary? ------
 header .container {
   background-color: beige;
-}
+}  -----*/
 
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
@@ -151,7 +152,8 @@ header .container {
   text-align: left;
 }
 #work .row {
-  padding-bottom: 48px;
+  padding-bottom: 36px;
+  background-color: none; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- */
 }
 #work .container {
   display: inline-block;
@@ -162,12 +164,12 @@ header .container {
 #work .box-ad,
 #work .box-ff,
 #work .box-mf {
-  /*------- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ------- */
+  /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
   padding: 40px 16px 0px 16px;
   background-color: white -5;
   display: inline-block;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   -webkit-box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
   -moz-box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
   box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
@@ -175,12 +177,12 @@ header .container {
 #work .box-ct,
 #work .box-hh,
 #work .box-ms {
-  /*------- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ------- */
+  /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
   padding: 40px 16px 0px 16px;
   background-color: white -5;
   display: inline-block;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   -webkit-box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
   -moz-box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
   box-shadow: -4px 0px 16px 0px rgba(155, 161, 163, 0.4);
@@ -192,6 +194,10 @@ header .container {
 
 #work p {
   padding: 1px 0 20px 0;
+}
+
+.indexHiddenOnMobile {
+  display: none;
 }
 
 /* ------------------------------- MENU PAGE -------------------------------- */
@@ -284,14 +290,17 @@ header .container {
 
 .arrowup {
   background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
-  width: 26px;
-  height: 23px;
+  width: 18px;
+  height: 16px;
   transition: 150ms ease-in-out;
+  margin: auto;
+
+  margin-bottom: 112px;
 }
 .arrowup:hover {
   background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
-  width: 30px;
-  height: 27px;
+  width: 20px;
+  height: 18px;
   transition: 150ms ease-in-out;
 }
 
@@ -416,7 +425,7 @@ header .container {
   position: absolute;
   width: 80px;
   left: 20px;
-  top: -14px;
+  top: 4px;
   z-index: -1;
 }
 
@@ -428,6 +437,7 @@ header .container {
   font-weight: 300;
   font-size: 13px;
   padding: 8px 15px;
+  margin-top: 20px;
   border-radius: 0px;
   border: 1px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -446,7 +456,7 @@ header .container {
 
 footer .container {
   display: inline-block;
-  padding: 48px 0 24px 0;
+  padding: 50px 16px 40px 16px;
   width: 100%;
   margin: auto;
   background-color: #f5f5f5;
@@ -454,10 +464,12 @@ footer .container {
 footer .social {
   display: block;
   margin: auto;
+  background-color: none;
 }
-footer .container p {
+footer p {
   text-align: center;
   padding-top: 3px;
+  padding-bottom: 8px;
 }
 
 img {
@@ -489,8 +501,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
-
-  border: 1px solid #ffffff;
+  border: 1px solid white;
 }
 
 .col-1 {
