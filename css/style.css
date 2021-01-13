@@ -162,9 +162,9 @@ header .container {
   width: 100%;
 }
 
-#work .box-ad,
-#work .box-ff,
-#work .box-mf {
+.box-ad,
+.box-ff,
+.box-mf {
   /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
   padding: 40px 16px 0px 16px;
   background-color: white -5;
@@ -175,9 +175,9 @@ header .container {
   -moz-box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
   box-shadow: 4px 1px 16px 0px rgba(155, 161, 163, 0.4);
 }
-#work .box-ct,
-#work .box-hh,
-#work .box-ms {
+.box-ct,
+.box-hh,
+.box-ms {
   /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
   padding: 40px 16px 0px 16px;
   background-color: white -5;
@@ -268,8 +268,13 @@ header .container {
   box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   margin-bottom: 12px;
 }
-.mePics2 {
+/* .mePics2 {
   padding: 0 16px;
+}  */
+
+.box-resume {
+  padding: 0px 16px 88px 16px;
+  display: inline-block;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -343,6 +348,7 @@ header .container {
 .dribbble:hover,
 .dribbble:active,
 .resume,
+.resume:hover,
 .resume:active {
   width: 28px;
   height: 28px;
@@ -409,34 +415,19 @@ header .container {
 .resume:hover {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-blk.svg")
     no-repeat;
-  width: 85px;
-  height: 30px;
-  transition: 250ms ease-in-out;
-  display: inline-block;
 }
 .resume:active {
   background: url("../img/2-about/2-about-imgs/2-resume-symbol-yellow.svg")
     no-repeat;
 }
 
-/* --------------------- VIEW PROJECT / RESUME BUTTONS ---------------------- */
+/* --------------------------- YELLOW BOX BUTTONS --------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.projectButton {
+.yellowBoxButton {
   position: relative;
 }
-.projectButton .yellowBox {
-  position: absolute;
-  width: 80px;
-  left: 20px;
-  top: 4px;
-  z-index: -1;
-}
-
-.resumeButton {
-  position: relative;
-}
-.resumeButton .yellowBox {
+.yellowBoxButton .yellowBox {
   position: absolute;
   width: 80px;
   left: 20px;
@@ -524,7 +515,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
-  border: 1px solid aqua;
+  border: 1px solid none;
 }
 
 .col-1 {

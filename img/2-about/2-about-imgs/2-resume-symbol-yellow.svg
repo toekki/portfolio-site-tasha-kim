@@ -6,7 +6,10 @@
 	.st0{fill:#F7F000;}
 </style>
 <g>
-	<path class="st0" d="M15,0C6.7,0,0,6.7,0,15c0,8.3,6.7,15,15,15c8.3,0,15-6.7,15-15C30,6.7,23.3,0,15,0z"/>
+	<rect x="1" y="1" class="st0" width="28" height="28"/>
+	<path d="M28,2v26H2V2H28 M30,0H0v30h30V0L30,0z"/>
+</g>
+<g>
 	<rect x="8.5" y="7.3" width="2.5" height="2"/>
 	<rect x="13.1" y="7.3" width="8.4" height="2"/>
 	<rect x="8.5" y="11.8" width="2.5" height="2"/>
