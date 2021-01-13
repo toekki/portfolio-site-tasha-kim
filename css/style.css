@@ -7,6 +7,7 @@ Secondary Color (Dark-Gray): #4D4D4D;
 Accent Color (Mid-Gray): #9BA1A3;
 Accent Color	(Light-Gray): #F5F5F5;
 Accent Color (Yellow): #F7F000;
+Footer Gray grfx/text: #727272;
 */
 
 * {
@@ -55,7 +56,7 @@ body {
   background-color: white;
   font-family: "proximanova-regular", sans-serif;
   font-weight: normal;
-  font-size: 15.5px;
+  font-size: 15.25px;
   line-height: 1.25;
   color: #000000;
 }
@@ -152,7 +153,7 @@ header .container {
   text-align: left;
 }
 #work .row {
-  padding-bottom: 36px;
+  padding-bottom: 48px;
   background-color: none; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- */
 }
 #work .container {
@@ -196,10 +197,6 @@ header .container {
   padding: 1px 0 20px 0;
 }
 
-.indexHiddenOnMobile {
-  display: none;
-}
-
 /* ------------------------------- MENU PAGE -------------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -208,12 +205,14 @@ header .container {
   width: 20px;
   height: 20px;
   transition: 150ms ease-in-out;
-  margin-top: 32px;
+  margin-top: 16px;
+  display: inline-block;
 }
 
 .navigation {
   text-align: center;
   padding-top: 165px;
+  padding-bottom: 125px;
   list-style-type: none;
   display: inline-block;
   width: 100%;
@@ -233,13 +232,18 @@ header .container {
 }
 #aboutHero {
   margin: 0;
-  padding: 160px 16px 0px 16px;
+  padding: 110px 16px 0px 16px;
   display: inline-block;
   width: 100%;
 }
 
 #about .container {
   padding: 0 16px;
+  z-index: -5;
+  top: -150px;
+  position: relative;
+  display: in-block;
+  width: 100%;
 }
 #about .row {
   padding-top: 0px;
@@ -259,10 +263,10 @@ header .container {
 }
 
 .mePics1 {
-  z-index: -5;
-  position: relative;
-  display: in-block;
-  width: 100%;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+  box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+  margin-bottom: 12px;
 }
 .mePics2 {
   padding: 0 16px;
@@ -340,10 +344,11 @@ header .container {
 .dribbble:active,
 .resume,
 .resume:active {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   transition: 250ms ease-in-out;
   display: inline-block;
+  padding: 24px 0px 0 32px;
 }
 
 .email {
@@ -414,14 +419,24 @@ header .container {
     no-repeat;
 }
 
-/* -------------------------- VIEW PROJECT BUTTONS -------------------------- */
+/* --------------------- VIEW PROJECT / RESUME BUTTONS ---------------------- */
 /* -------------------------------------------------------------------------- */
 
 .projectButton {
   position: relative;
 }
-
 .projectButton .yellowBox {
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  top: 4px;
+  z-index: -1;
+}
+
+.resumeButton {
+  position: relative;
+}
+.resumeButton .yellowBox {
   position: absolute;
   width: 80px;
   left: 20px;
@@ -456,13 +471,13 @@ header .container {
 
 footer .container {
   display: inline-block;
-  padding: 50px 16px 40px 16px;
+  padding: 50px 16px 50px 16px;
   width: 100%;
   margin: auto;
   background-color: #f5f5f5;
 }
 footer .social {
-  display: block;
+  display: inline-block;
   margin: auto;
   background-color: none;
 }
@@ -470,6 +485,10 @@ footer p {
   text-align: center;
   padding-top: 3px;
   padding-bottom: 8px;
+}
+
+.copyright {
+  color: #727272;
 }
 
 img {
@@ -496,12 +515,16 @@ a:active {
   color: #f7f000;
 }
 
+.hiddenOnMobile {
+  display: none;
+}
+
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
 
 [class*="col-"] {
   float: left;
-  border: 1px solid white;
+  border: 1px solid aqua;
 }
 
 .col-1 {
