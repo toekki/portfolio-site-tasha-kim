@@ -60,7 +60,7 @@ body {
   background-color: white;
   font-family: "proximanova-regular", sans-serif;
   font-weight: normal;
-  font-size: 15.25px;
+  font-size: 14px;
   line-height: 1.25;
   color: #000000;
   margin: 0;
@@ -77,10 +77,9 @@ header {
   display: inline-block;
 }
 
-/* ------ delete this later? ------ unnecessary? ------
 header .container {
-  background-color: beige;
-}  -----*/
+  background-color: none;
+}
 
 .logo {
   background: url("../img/1-home/1-imgs/1-tk-logo.svg") no-repeat;
@@ -167,6 +166,7 @@ header .container {
   display: inline-block;
   padding: 0px 0px;
   width: 100%;
+  margin: auto;
 }
 
 .box-ad,
@@ -174,7 +174,7 @@ header .container {
 .box-mf {
   /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
   padding: 40px 16px 0px 16px;
-  background-color: white -5;
+  background-color: #ffffff -5;
   display: inline-block;
   width: 100%;
   margin-bottom: 30px;
@@ -201,7 +201,7 @@ header .container {
 }
 
 #work p {
-  padding: 1px 0 20px 0;
+  padding: 1px 0 16px 0;
 }
 
 /* ------------------------------- MENU PAGE -------------------------------- */
@@ -462,6 +462,11 @@ header .container {
 /* -------------------------OVERALL LAYOUT STYLING -------------------------- */
 /* -------------------------------------------------------------------------- */
 
+.container {
+  width: 100%;
+  margin: auto;
+}
+
 .maxWidth {
   max-width: 1200px;
   margin: 0 auto;
@@ -471,7 +476,7 @@ footer .container {
   display: inline-block;
   padding: 50px 16px 50px 16px;
   width: 100%;
-  margin: auto;
+  margin: 0;
   background-color: #f5f5f5;
 }
 footer .social {

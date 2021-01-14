@@ -1,17 +1,16 @@
 #ad {
   text-align: left;
 }
-/* ----
+/* ---
 #ad .row {
-  padding-bottom: 48px;
-  background-color: aqua; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- 
-} ---- */
+  padding-bottom: 4px;
+  background-color: none; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- */
 
 #ad .container {
   display: inline-block;
   padding: 0px 0px;
   width: 100%;
-  background-color: aquamarine;
+  background-color: none;
 }
 
 .projType {
@@ -59,7 +58,7 @@
   padding: 0;
 }
 .box-adChallenge h2 {
-  padding: 1.5em 0 0 8px;
+  padding: 1.5em 0 0 4px;
 }
 
 .box-adChallenge p {
@@ -67,30 +66,38 @@
 }
 
 /* --------------------- The Process --------------------- */
-#box-adProcess {
+.box-adProcess {
   background-color: #e2e6e9;
   margin: 0;
+  padding: 16px;
+  display: block;
 }
-.box-adProcessBG h3 {
-  padding: 80px;
-}
+
 .box-adProcessBg {
   background-color: #ffffff;
-  margin: 20px 20px 0px 20px;
+  margin: 0;
   padding: 0px;
-  display: inline-block;
+  display: block;
 }
 
-.box-adProcessUx {
-  background-color: #ffffff;
-  margin: 10px 20px;
-  padding: 0px;
-  display: inline-block;
+.box-adProcessBg h3,
+.box-adProcessUx h3,
+.box-adProcessUi h3 {
+  margin: auto;
+  display: block;
+  text-align: center;
 }
 
+.box-adProcessBg p {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.box-adProcessUx,
 .box-adProcessUi {
   background-color: #ffffff;
-  margin: 0px 20px 20px 20px;
+  margin: auto;
   padding: 0px;
-  display: inline-block;
+  display: block;
 }
