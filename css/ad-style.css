@@ -1,0 +1,96 @@
+#ad {
+  text-align: left;
+}
+/* ----
+#ad .row {
+  padding-bottom: 48px;
+  background-color: aqua; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- 
+} ---- */
+
+#ad .container {
+  display: inline-block;
+  padding: 0px 0px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.projType {
+  /* --- these are the little blocks UI/ UX/ Responsive, etc --- */
+  display: inline-block;
+  background-color: none;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-top: 4px;
+  border-radius: 0px;
+  border: 1px solid #9ba1a3; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+/* ------------------------------ sections ------------------------------ */
+
+/* -------------------- Intro -------------------- */
+.box-adIntro {
+  position: relative;
+  top: -65px;
+  margin: 16px 16px 0 16px;
+  padding: 20px;
+  display: inline-block;
+  background-color: black;
+  opacity: 80%;
+  color: #ffffff;
+  font-style: normal;
+}
+.box-adIntro h1 {
+  padding: 16px 0px 16px 0px;
+}
+.box-adIntro p {
+  padding-bottom: 16px;
+}
+
+/* -------------------- The Challenge -------------------- */
+.box-adChallenge {
+  background-color: none;
+  margin: 0px 16px 0 16px;
+  padding: 20px;
+  display: inline-block;
+}
+.box-adChallenge picture {
+  padding: 0;
+}
+.box-adChallenge h2 {
+  padding: 1.5em 0 0 8px;
+}
+
+.box-adChallenge p {
+  padding: none;
+}
+
+/* --------------------- The Process --------------------- */
+#box-adProcess {
+  background-color: #e2e6e9;
+  margin: 0;
+}
+.box-adProcessBG h3 {
+  padding: 80px;
+}
+.box-adProcessBg {
+  background-color: #ffffff;
+  margin: 20px 20px 0px 20px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.box-adProcessUx {
+  background-color: #ffffff;
+  margin: 10px 20px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.box-adProcessUi {
+  background-color: #ffffff;
+  margin: 0px 20px 20px 20px;
+  padding: 0px;
+  display: inline-block;
+}

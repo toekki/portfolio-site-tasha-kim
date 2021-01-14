@@ -32,16 +32,19 @@ h3 {
 h1 {
   font-size: 2.5em;
   font-weight: 400;
-  line-height: 0.85;
+  line-height: 1;
+  margin: 0;
 }
 h2 {
   font-size: 1.75em;
   font-weight: 400;
   line-height: 0.85;
+  margin: 0;
 }
 h3 {
   font-size: 1.35em;
   font-weight: 400;
+  margin: 0;
 }
 h4 {
   font-family: "proximanova-regular", sans-serif;
@@ -50,6 +53,7 @@ h4 {
   font-size: 0.8em;
   font-weight: 300;
   color: #9ba1a3;
+  margin: 0;
 }
 
 body {
@@ -59,6 +63,7 @@ body {
   font-size: 15.25px;
   line-height: 1.25;
   color: #000000;
+  margin: 0;
 }
 
 /* --------------------------------- HEADER --------------------------------- */
@@ -101,7 +106,7 @@ header .container {
   width: 26px;
   height: 16px;
   transition: 150ms ease-in-out;
-  margin-top: 16px;
+  margin-top: 14px;
   display: inline-block;
 }
 .menu:hover {
@@ -153,12 +158,14 @@ header .container {
   text-align: left;
 }
 #work .row {
+  padding-top: 10px;
   padding-bottom: 48px;
   background-color: none; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- */
 }
+
 #work .container {
   display: inline-block;
-  padding: 0px 16px;
+  padding: 0px 0px;
   width: 100%;
 }
 
@@ -212,7 +219,7 @@ header .container {
 .navigation {
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 125px;
+  padding-bottom: 150px;
   list-style-type: none;
   display: inline-block;
   width: 100%;
