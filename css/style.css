@@ -527,7 +527,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
-  border: 1px solid none;
+  border: 1px solid aquamarine;
 }
 
 .col-1 {
