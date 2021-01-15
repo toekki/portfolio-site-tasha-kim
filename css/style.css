@@ -302,7 +302,7 @@ header .container {
 #about .container {
   padding: 0 16px;
   z-index: -5;
-  top: -150px;
+  top: -125px;
   position: relative;
   display: in-block;
   width: 100%;
@@ -328,7 +328,8 @@ header .container {
   -webkit-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   -moz-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  line-height: 0;
 }
 /* .mePics2 {
   padding: 0 16px;
@@ -539,13 +540,11 @@ footer .social {
   justify-content: center;
   line-height: 0;
 }
-footer p {
+
+.copyright {
   text-align: center;
   padding-top: 3px;
   padding-bottom: 8px;
-}
-
-.copyright {
   color: #727272;
 }
 
@@ -578,7 +577,7 @@ a:active {
 
 [class*="col-"] {
   float: left;
-  border: 1px solid aquamarine;
+  border: 1px solid none;
 }
 
 .col-1 {
