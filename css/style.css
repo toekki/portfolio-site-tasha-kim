@@ -15,6 +15,60 @@ Footer Gray grfx/text: #727272;
   margin: 0px;
   padding: 0px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------- END OF HTML5 RESET STYLESHEET --------------------------------- */
+/* -------------------------------------- FONTS / H1-5 HEADERS ------------------------------------- */
 
 @font-face {
   font-family: "proximanova-regular";
@@ -66,8 +120,8 @@ body {
   margin: 0;
 }
 
-/* --------------------------------- HEADER --------------------------------- */
-/* ------------------------------ logo - menu ------------------------------- */
+/* --------------------------------- HEADER SECTION--------------------------------- */
+/* ---------------------------------- logo - menu ---------------------------------- */
 
 header {
   position: fixed;
@@ -75,6 +129,7 @@ header {
   padding: 18px 16px 18px 16px;
   border-bottom: none;
   display: inline-block;
+  z-index: 2;
 }
 
 header .container {
@@ -480,9 +535,9 @@ footer .container {
   background-color: #f5f5f5;
 }
 footer .social {
-  display: inline-block;
-  margin: auto;
-  background-color: none;
+  display: flex;
+  justify-content: center;
+  line-height: 0;
 }
 footer p {
   text-align: center;
@@ -492,10 +547,6 @@ footer p {
 
 .copyright {
   color: #727272;
-}
-
-img {
-  width: 100%;
 }
 
 a {
