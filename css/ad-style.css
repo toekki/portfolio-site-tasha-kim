@@ -13,18 +13,6 @@
   background-color: none;
 }
 
-.projType {
-  /* --- these are the little blocks UI/ UX/ Responsive, etc --- */
-  display: inline-block;
-  background-color: none;
-  font-weight: 300;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 0px;
-  border: 1px solid #9ba1a3; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
 /* ------------------------------ sections ------------------------------ */
 
 /* -------------------- Intro -------------------- */

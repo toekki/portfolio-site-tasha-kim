@@ -335,9 +335,8 @@ header .container {
   padding: 0 16px;
 }  */
 
-.box-resume {
-  padding: 0px 16px 88px 16px;
-  display: inline-block;
+.resumeDownloadSection {
+  padding-left: 16px;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -489,6 +488,7 @@ header .container {
 
 .yellowBoxButton {
   position: relative;
+  display: inline-block;
 }
 .yellowBoxButton .yellowBox {
   position: absolute;
@@ -550,14 +550,15 @@ a {
   color: #000000;
   text-decoration: none; /* No underlining */
 }
+/* ---
 a:visited {
-  /* visited link */
+  /* visited link *
   color: #9ba1a3;
-}
+} --- */
 a:hover,
 a:focus {
   /* focus is similar to hover but when targeted by the keyboard */
-  color: #ffffff;
+  color: #9ba1a3;
   text-decoration: none; /* Underlining when hovering over a link */
 }
 
@@ -568,6 +569,18 @@ a:active {
 
 .hiddenOnMobile {
   display: none;
+}
+
+.projType {
+  /* --- these are the little blocks UI/ UX/ Responsive, etc --- */
+  display: inline-block;
+  background-color: none;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 0px;
+  border: 1px solid #9ba1a3; /* width of the border, type, color */
+  transition: 0.2s opacity;
 }
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
