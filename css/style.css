@@ -664,6 +664,15 @@ Medium devices (640px and larger)
     width: 58.33%;
   }
   /* --------------------------------------------- HOME -------------------------------------------- */
+  #hero .container,
+  #work .container {
+    padding: 0 32px;
+  }
+
+  #hero {
+    padding: 275px 0px 56px 16px;
+  }
+
   .hiddenOnMobile {
     display: inline-block;
   }
