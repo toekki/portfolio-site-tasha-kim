@@ -1,12 +1,10 @@
 #mf .container {
   display: inline-block;
   padding: 0px 16px;
-  width: 100%;
-  background-color: none;
 }
 
 .mfLogo {
-  width: 95px;
+  width: 100px;
   height: auto;
   display: inline-block;
   padding: 120px 0 0 16px;
@@ -19,11 +17,14 @@
   top: 0;
   left: 0;
   z-index: -5;
+  margin: 0;
+  width: 100%;
 }
 
 .mfMain {
   margin: 0;
   z-index: -4;
+  width: 100%;
 }
 
 #mf .yellowBoxButton {
@@ -33,50 +34,132 @@
 }
 
 #mf h1 {
-  padding-top: 48px;
+  padding-top: 40px;
   padding-bottom: 8px;
 }
 #mf h2 {
-  padding-top: 60px;
+  padding-top: 72px;
   text-align: center;
 }
 #mf h3 {
-  padding-top: 16px;
-  padding-bottom: 2px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  line-height: 0%;
+}
+.projType {
+  display: inline-block;
 }
 
 .mfIntroText {
   display: inline-block;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 .mfLowFi,
 .mfMidFi,
 .mfInspirationBrd {
-  padding: 12px 0 0 0;
+  width: 100%;
+  padding: 0;
+  margin: 12px 0 0 0;
+  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  line-height: 0%;
 }
 
 .mfTypeStylesFonts {
-  padding: 36px 8px 0 16px;
+  padding: 20px 32px 0 32px;
+  display: inline-block;
 }
 .mfTypePicDesk {
-  padding: 8px 16px 0 0;
+  display: none;
 }
 .mfTypePicCar {
-  padding: 0px 0 0 16px;
+  display: none;
 }
 .mfTypeColorPalette {
-  padding: 24px 16px 0 8px;
+  padding: 24px 24px 0 24px;
 }
 
-.mfIcons {
-  padding-top: 16px;
+.mfIconsA {
+  padding: 16px 16px 0 16px;
+}
+.mfIconsB {
+  padding: 18px 16px 0 16px;
 }
 
 .mfMockupStudyImage {
-  padding-top: 48px;
+  margin-top: 48px;
+  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  line-height: 0%;
 }
 
 .mfFinalDesigns {
   padding: 16px 0 100px 0;
+}
+
+/* ----------------------------- MEDIA QUIERIES ------------------------------ */
+/* --------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------- */
+
+/* ==============================================================================
+Medium devices (640px and larger)
+=============================================================================== */
+@media only screen and (min-width: 640px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .mfLogo {
+    width: 150px;
+    padding: 150px 0 0 32px;
+  }
+  #mf h2 {
+    padding-top: 108px;
+  }
+  .mfIntroText {
+    padding: 0 24px 0 430px;
+  }
+  .mfTypeStylesFonts {
+    padding: 64px 24px 0 32px;
+  }
+  .mfTypePicDesk {
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    display: inline-block;
+    line-height: 0;
+    padding: 0%;
+    margin: 24px 24px 0 0;
+  }
+  .mfTypePicCar {
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    display: inline-block;
+    line-height: 0;
+    margin: 0px 0 0 24px;
+  }
+  .mfTypeColorPalette {
+    margin: 64px 0px 0 8px;
+  }
+
+  .mfIconsA {
+    padding: 16px 8px 48px 16px;
+  }
+  .mfIconsB {
+    padding: 16px 16px 48px 8px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
