@@ -591,6 +591,13 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.previousButton {
+  padding: 0 0 0 16px;
+}
+.nextButton {
+  float: right;
+}
+
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
 
