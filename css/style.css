@@ -330,10 +330,11 @@ header .container {
   box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   margin-bottom: 14px;
   line-height: 0;
+  display: inline-block;
 }
-/* .mePics2 {
-  padding: 0 16px;
-}  */
+.mePics2 {
+  display: none;
+}
 
 #about .yellowBoxButton {
   display: inline-block;
@@ -649,6 +650,18 @@ a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .mePics1 {
+    border: 5px solid #000;
+  }
+  .mePics2 {
+    border: 5px solid #000;
+    -webkit-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+    -moz-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+    box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
+    margin-bottom: 14px;
+    line-height: 0;
+    display: inline-block;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
