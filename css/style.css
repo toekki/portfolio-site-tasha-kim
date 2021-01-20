@@ -328,7 +328,7 @@ header .container {
   -webkit-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   -moz-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
   box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   line-height: 0;
   display: inline-block;
 }
@@ -340,6 +340,10 @@ header .container {
   display: inline-block;
   z-index: 2;
   padding-bottom: 48px;
+}
+
+.resumeDownloadSection {
+  padding: 48px 0 0 16px;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -650,17 +654,35 @@ a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    padding: 24px;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  /* --------------------------------------------- HOME -------------------------------------------- */
+  .hiddenOnMobile {
+    display: inline-block;
+  }
+  /* -------------------------------------------- ABOUT -------------------------------------------- */
   .mePics1 {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
     border: 5px solid #000;
+    margin: 72px 8px 8px 24px;
   }
   .mePics2 {
     border: 5px solid #000;
-    -webkit-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
-    -moz-box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
-    box-shadow: 0px 5px 6px 0px rgba(155, 161, 163, 0.35);
-    margin-bottom: 14px;
     line-height: 0;
     display: inline-block;
+    margin: 0 8px 0 24px;
+  }
+  .mfAboutText {
+    margin-top: 64px;
   }
 }
 /* ==============================

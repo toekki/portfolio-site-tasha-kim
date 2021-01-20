@@ -135,6 +135,12 @@ Medium devices (640px and larger)
   .mfIntroText {
     padding: 0 24px 0 430px;
   }
+
+  .mfWrapper1,
+  .mfWrapper2 {
+    padding: 0 24px;
+  }
+
   .mfTypeStylesFonts {
     padding: 64px 24px 0 32px;
   }
