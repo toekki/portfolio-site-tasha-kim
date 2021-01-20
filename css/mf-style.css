@@ -1,6 +1,14 @@
 #mf .container {
   display: inline-block;
+  padding: 0px;
+  position: relative;
+  top: -210x;
+}
+#mf .innerContainer {
+  display: inline-block;
   padding: 0px 16px;
+  position: relative;
+  top: -190px;
 }
 
 .mfLogo {
@@ -8,7 +16,7 @@
   height: auto;
   display: inline-block;
   padding: 120px 0 0 16px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #mfBackground {
@@ -22,6 +30,8 @@
 }
 
 .mfMain {
+  position: relative;
+  top: -200px;
   margin: 0;
   z-index: -4;
   width: 100%;
@@ -108,13 +118,16 @@
 Medium devices (640px and larger)
 =============================================================================== */
 @media only screen and (min-width: 640px) {
+  #mf .innerContainer {
+    top: -960px;
+  }
   .col-md-6 {
     width: 50%;
   }
 
   .mfLogo {
     width: 150px;
-    padding: 150px 0 0 32px;
+    padding: 120px 0 0 32px;
   }
   #mf h2 {
     padding-top: 108px;
