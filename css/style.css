@@ -747,6 +747,10 @@ Medium devices (640px and larger)
   .mfAboutText {
     margin-top: 64px;
   }
+  /* ------------------ MD --------------------- MENU -------------------- MD ------------------ */
+  .navigation {
+    padding-top: 185px;
+  }
 }
 /* ===============================================================================================
 Large devices (1024px or larger)
@@ -800,21 +804,19 @@ Large devices (1024px or larger)
     top: 80px;
   }
 
-  /* ----------marker------------ */
-
   .box-ad,
   .box-ff,
   .box-mf {
     /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
     padding: 32px 16px 40px 16px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .box-ct,
   .box-hh,
   .box-ms {
     /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
     padding: 32px 16px 40px 16px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   /* ------------------ LG -------------------- ABOUT -------------------- LG ------------------ */
   #aboutHero {
@@ -838,6 +840,10 @@ Large devices (1024px or larger)
   }
   .mfAboutText {
     margin-top: 64px;
+  }
+  /* ------------------ LG --------------------- MENU -------------------- LG ------------------ */
+  .navigation {
+    padding-top: 220px;
   }
 }
 /* ===============================================================================================
