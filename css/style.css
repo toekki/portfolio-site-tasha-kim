@@ -647,12 +647,12 @@ a:active {
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
 
-/* ==============================
+/* ===============================================================================================
 Medium devices (640px and larger)
-================================= */
+================================================================================================== */
 @media only screen and (min-width: 640px) {
   header {
-    padding: 24px;
+    padding: 24px 24px 0 24px;
   }
   h1 {
     font-size: 48px;
@@ -663,7 +663,7 @@ Medium devices (640px and larger)
     line-height: 0.85;
   }
   h3 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.1;
   }
   body {
@@ -680,19 +680,20 @@ Medium devices (640px and larger)
   .col-md-7 {
     width: 58.33%;
   }
-  /* --------------------------------------------- HOME -------------------------------------------- */
-  #hero .container,
-  #work .container {
-    padding: 0 40px;
+  /* ------------------ MD ----------------- HOME / INDEX ----------------- MD ------------------ */
+  #hero {
+    padding: 275px 0px 56px 16px;
   }
-
+  #hero .container {
+    padding: 0 20px;
+  }
   #hero .yellowBoxMain {
     width: 200px;
     left: -5px;
     top: -240px;
   }
-  #hero {
-    padding: 275px 0px 56px 16px;
+  #work .container {
+    padding: 0 40px;
   }
 
   .hiddenOnMobile {
@@ -706,11 +707,7 @@ Medium devices (640px and larger)
   }
   .button {
     /* --- (box buttons) --- */
-    margin-top: 16px;
-  }
-  .yellowBoxButton .yellowBox {
-    left: 20px;
-    top: 0px;
+    margin-top: 24px;
   }
 
   .box-ad,
@@ -727,7 +724,7 @@ Medium devices (640px and larger)
     padding: 32px 16px 0px 16px;
     margin-bottom: 30px;
   }
-  /* -------------------------------------------- ABOUT -------------------------------------------- */
+  /* ------------------ MD -------------------- ABOUT -------------------- MD ------------------ */
   #aboutHero {
     margin-left: 24px;
   }
@@ -751,13 +748,100 @@ Medium devices (640px and larger)
     margin-top: 64px;
   }
 }
-/* ==============================
+/* ===============================================================================================
 Large devices (1024px or larger)
-================================= */
+================================================================================================== */
 @media only screen and (min-width: 1024px) {
+  header {
+    padding: 24px 48px 0 48px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* ------------------ LG ----------------- HOME / INDEX ----------------- LG ------------------ */
+  #hero {
+    padding: 275px 0px 72px 28px;
+  }
+
+  #work .container {
+    padding: 0 48px;
+  }
+
+  .projTitleImage {
+    padding-left: 24px;
+  }
+
+  .projectDesc {
+    padding: 80px 0px 0 16px;
+  }
+
+  .button {
+    /* --- (box buttons) --- */
+    margin-top: 96px;
+  }
+  .yellowBoxButton .yellowBox {
+    left: 20px;
+    top: 80px;
+  }
+
+  /* ----------marker------------ */
+
+  .box-ad,
+  .box-ff,
+  .box-mf {
+    /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
+    padding: 32px 16px 40px 16px;
+    margin-bottom: 30px;
+  }
+  .box-ct,
+  .box-hh,
+  .box-ms {
+    /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
+    padding: 32px 16px 40px 16px;
+    margin-bottom: 30px;
+  }
+  /* ------------------ LG -------------------- ABOUT -------------------- LG ------------------ */
+  #aboutHero {
+    margin-left: 24px;
+  }
+  #aboutHero .yellowBoxMain {
+    top: -90px;
+  }
+  .mePics1 {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    border: 5px solid #000;
+    margin: 76px 0px 8px 24px;
+  }
+  .mePics2 {
+    border: 5px solid #000;
+    line-height: 0;
+    display: inline-block;
+    margin: 0 0px 0 24px;
+  }
+  .mfAboutText {
+    margin-top: 64px;
+  }
 }
-/* ==============================
+/* ===============================================================================================
 X-large devices (1440px or larger)
-================================= */
+================================================================================================== */
 @media only screen and (min-width: 1440px) {
 }
