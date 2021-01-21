@@ -726,7 +726,7 @@ Medium devices (640px and larger)
   }
   /* ------------------ MD -------------------- ABOUT -------------------- MD ------------------ */
   #aboutHero .container {
-    padding: 50px 36px 0 36px;
+    padding: 50px 43px 0 43px;
   }
   #aboutHero .yellowBoxMain {
     top: -90px;
@@ -736,13 +736,13 @@ Medium devices (640px and larger)
     -moz-box-shadow: unset;
     box-shadow: unset;
     border: 5px solid #000;
-    margin: 64px 0px 8px 36px;
+    margin: 64px 0px 8px 43px;
   }
   .mePics2 {
     border: 5px solid #000;
     line-height: 0;
     display: inline-block;
-    margin: 0 0px 0 36px;
+    margin: 0 0px 0 43px;
   }
   .mfAboutText {
     margin-top: 52px;
