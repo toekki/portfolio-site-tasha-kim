@@ -1,22 +1,33 @@
-#mf .container {
-  display: inline-block;
-  padding: 0px;
-  position: relative;
-  top: -210x;
-}
-#mf .innerContainer {
-  display: inline-block;
-  padding: 0px 16px;
-  position: relative;
-  top: -190px;
-}
-
 .mfLogo {
   width: 97px;
   height: auto;
   display: inline-block;
   padding: 120px 0 0 16px;
   z-index: 2;
+}
+
+.mfMain {
+  /*---background phone image--*/
+  position: relative;
+  top: -255px;
+  margin: 0;
+  z-index: -4;
+  width: 100%;
+}
+
+#mf .container {
+  /* ------ sections ------ */
+  display: inline-block;
+  padding: 0 0 32px 0;
+  position: relative;
+}
+
+#mf .innerContainer {
+  /* --- space above h1 --- */
+  display: inline-block;
+  padding: 0px 16px;
+  position: relative;
+  top: -250px;
 }
 
 #mfBackground {
@@ -29,35 +40,22 @@
   width: 100%;
 }
 
-.mfMain {
-  position: relative;
-  top: -200px;
-  margin: 0;
-  z-index: -4;
-  width: 100%;
-}
-
-#mf .yellowBoxButton {
+.projType {
+  /* --- UI DESIGN --- */
   display: inline-block;
-  z-index: 2;
-  padding-bottom: 48px;
 }
-
 #mf h1 {
-  padding-top: 40px;
+  padding-top: 24px;
   padding-bottom: 8px;
 }
 #mf h2 {
-  padding-top: 72px;
+  padding-top: 0px;
   text-align: center;
 }
 #mf h3 {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 12px;
   line-height: 0%;
-}
-.projType {
-  display: inline-block;
 }
 
 .mfIntroText {
@@ -65,20 +63,33 @@
   padding: 0 16px;
 }
 
+/* --- actual image (not section) --- */
 .mfLowFi,
-.mfMidFi,
 .mfInspirationBrd {
   width: 100%;
   padding: 0;
-  margin: 12px 0 0 0;
+  margin: 12px 0 12px 0;
+  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  line-height: 0%;
+}
+.mfMidFi {
+  width: 100%;
+  padding: 0;
+  margin: 12px 0 40px 0;
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   line-height: 0%;
 }
 
+.mfWrapper1 {
+  padding: 64px 16px 0 16px;
+}
+
 .mfTypeStylesFonts {
-  padding: 20px 32px 0 32px;
+  padding: 20px 40px 0 40px;
 }
 .mfTypePicDesk {
   display: none;
@@ -87,18 +98,23 @@
   display: none;
 }
 .mfTypeColorPalette {
-  padding: 24px 24px 0 24px;
+  padding: 24px 30px 48px 30px;
 }
 
 .mfIconsA {
-  padding: 16px 16px 0 16px;
+  padding: 16px 40px 0 40px;
 }
 .mfIconsB {
-  padding: 18px 16px 0 16px;
+  padding: 18px 40px 0 40px;
+}
+
+.mfWrapper2 {
+  /* -- includes image & final -- */
+  padding: 48px 16px 0 16px;
 }
 
 .mfMockupStudyImage {
-  margin-top: 48px;
+  margin: 0 0 48px 0;
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
@@ -106,7 +122,13 @@
 }
 
 .mfFinalDesigns {
-  padding: 16px 0 100px 0;
+  padding: 16px 0 0px 0;
+}
+
+#mf .yellowBoxButton {
+  display: inline-block;
+  z-index: 2;
+  padding-bottom: 48px;
 }
 
 /* ----------------------------- MEDIA QUIERIES ------------------------------ */
@@ -117,30 +139,98 @@
 Medium devices (640px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 640px) {
-  #mf .innerContainer {
-    top: -960px;
-  }
-
   .mfLogo {
-    width: 175px;
-    padding: 170px 0 0 24px;
+    width: 135px;
+    height: auto;
+    display: inline-block;
+    padding: 157px 0 0 24px;
+    z-index: 2;
   }
 
+  .mfMain {
+    /*---background phone image--*/
+    position: relative;
+    top: -380px;
+    margin: 0;
+    z-index: -4;
+    width: 100%;
+  }
+
+  #mf .container {
+    /* ------ sections ------ */
+    display: inline-block;
+    padding: 0 0 32px 0;
+    position: relative;
+  }
+
+  #mf .innerContainer {
+    /* --- space above h1 --- */
+    display: inline-block;
+    padding: 0px 16px;
+    position: relative;
+    top: -1160px;
+  }
+
+  #mfBackground {
+    /* ------- main background ------- */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    margin: 0;
+    width: 100%;
+  }
+
+  .projType {
+    /* --- UI DESIGN --- */
+    display: inline-block;
+  }
+  #mf h1 {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
   #mf h2 {
-    padding-top: 108px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  #mf h3 {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    line-height: 0%;
   }
 
   .mfIntroText {
+    display: inline-block;
     padding: 0 14px 0 420px;
   }
 
-  .mfWrapper1,
-  .mfWrapper2 {
-    padding: 0 24px;
+  /* --- actual image (not section) --- */
+  .mfLowFi,
+  .mfInspirationBrd {
+    width: 100%;
+    padding: 0;
+    margin: 12px 0 12px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+  .mfMidFi {
+    width: 100%;
+    padding: 0;
+    margin: 12px 0 40px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfWrapper1 {
+    padding: 64px 48px 0 48px;
   }
 
   .mfTypeStylesFonts {
-    padding: 64px 24px 0 32px;
+    padding: 64px 32px 0 48px;
   }
   .mfTypePicDesk {
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
@@ -149,7 +239,7 @@ Medium devices (640px and larger)
     display: inline-block;
     line-height: 0;
     padding: 0%;
-    margin: 24px 24px 0 0;
+    margin: 24px 48px 0 0;
   }
   .mfTypePicCar {
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
@@ -157,23 +247,193 @@ Medium devices (640px and larger)
     box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     display: inline-block;
     line-height: 0;
-    margin: 0px 0 0 24px;
+    margin: 0px 0 0 48px;
   }
   .mfTypeColorPalette {
-    margin: 64px 0px 0 8px;
+    margin: 64px 8px 120px 0px;
   }
 
   .mfIconsA {
-    padding: 16px 8px 48px 16px;
+    padding: 24px 8px 0 40px;
   }
   .mfIconsB {
-    padding: 16px 16px 48px 8px;
+    padding: 26px 40px 0 8px;
+  }
+
+  .mfWrapper2 {
+    /* -- includes image & final -- */
+    padding: 56px 48px 0 48px;
+  }
+
+  .mfMockupStudyImage {
+    margin: 0 0 56px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfFinalDesigns {
+    /* -- image only -- */
+    padding: 24px 0 0px 0;
+  }
+
+  #mf .yellowBoxButton {
+    display: inline-block;
+    z-index: 2;
+    padding-bottom: 48px;
   }
 }
+
 /* ===============================================================================================
 Large devices (1024px or larger)
 ================================================================================================== */
 @media only screen and (min-width: 1024px) {
+  .mfLogo {
+    width: 225px;
+    height: auto;
+    display: inline-block;
+    padding: 225px 0 0 56px;
+    z-index: 2;
+  }
+
+  .mfMain {
+    /*---background phone image--*/
+    position: relative;
+    top: -580px;
+    margin: 0;
+    z-index: -4;
+    width: 100%;
+  }
+
+  #mf .container {
+    /* ------ sections ------ */
+    display: inline-block;
+    padding: 0 0 32px 0;
+    position: relative;
+  }
+
+  #mf .innerContainer {
+    /* --- space above h1 --- */
+    display: inline-block;
+    padding: 0px 16px;
+    position: relative;
+    top: -1800px;
+  }
+
+  #mfBackground {
+    /* ------- main background ------- */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    margin: 0;
+    width: 100%;
+  }
+
+  .projType {
+    /* --- UI DESIGN --- */
+    display: inline-block;
+  }
+  #mf h1 {
+    padding-top: 48px;
+    padding-bottom: 8px;
+  }
+  #mf h2 {
+    padding-top: 0px;
+    text-align: center;
+  }
+  #mf h3 {
+    padding-top: 40px;
+    padding-bottom: 16px;
+    line-height: 0%;
+  }
+
+  .mfIntroText {
+    display: inline-block;
+    padding: 0 24px 0 690px;
+  }
+
+  /* --- actual image (not section) --- */
+  .mfLowFi,
+  .mfInspirationBrd {
+    width: 100%;
+    padding: 0;
+    margin: 12px 0 12px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+  .mfMidFi {
+    width: 100%;
+    padding: 0;
+    margin: 12px 0 120px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfWrapper1 {
+    /* -- includes wireframes & inspiration brd -- */
+    padding: 150px 72px 72px 72px;
+  }
+
+  .mfTypeStylesFonts {
+    padding: 88px 40px 0 72px;
+  }
+  .mfTypePicDesk {
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    display: inline-block;
+    line-height: 0;
+    padding: 0%;
+    margin: 24px 72px 0 0;
+  }
+  .mfTypePicCar {
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    display: inline-block;
+    line-height: 0;
+    margin: 0px 0 0 72px;
+  }
+  .mfTypeColorPalette {
+    margin: 96px 24px 264px 0px;
+  }
+
+  .mfIconsA {
+    padding: 40px 16px 0 56px;
+  }
+  .mfIconsB {
+    padding: 43px 56px 0 16px;
+  }
+
+  .mfWrapper2 {
+    /* -- includes image & final -- */
+    padding: 120px 72px 0 72px;
+  }
+
+  .mfMockupStudyImage {
+    margin: 0 0 120px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfFinalDesigns {
+    /* -- image only -- */
+    padding: 32px 0 0px 0;
+  }
+
+  #mf .yellowBoxButton {
+    display: inline-block;
+    z-index: 2;
+    padding-bottom: 48px;
+  }
 }
 /* ===============================================================================================
 X-large devices (1440px or larger)
