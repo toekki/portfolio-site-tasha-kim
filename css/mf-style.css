@@ -12,7 +12,7 @@
 }
 
 .mfLogo {
-  width: 100px;
+  width: 97px;
   height: auto;
   display: inline-block;
   padding: 120px 0 0 16px;
@@ -120,14 +120,12 @@ Medium devices (640px and larger)
   #mf .innerContainer {
     top: -960px;
   }
-  .col-md-6 {
-    width: 50%;
-  }
 
   .mfLogo {
-    width: 150px;
-    padding: 120px 0 0 32px;
+    width: 175px;
+    padding: 170px 0 0 24px;
   }
+
   #mf h2 {
     padding-top: 108px;
   }

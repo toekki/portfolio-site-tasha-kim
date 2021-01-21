@@ -188,7 +188,7 @@ header .container {
   position: relative;
   width: 150px;
   left: -5px;
-  top: -220px;
+  top: -200px;
   z-index: -1;
   display: inline-block;
 }
@@ -522,6 +522,13 @@ header .container {
   background-color: #000000;
 }
 
+.previousButton {
+  padding: 0 0 0 16px;
+}
+.nextButton {
+  float: right;
+}
+
 /* -------------------------OVERALL LAYOUT STYLING -------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -591,13 +598,6 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.previousButton {
-  padding: 0 0 0 16px;
-}
-.nextButton {
-  float: right;
-}
-
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
 
@@ -643,16 +643,6 @@ a:active {
   width: 100%;
 }
 
-/* --- keep in case --- trash later-------------------------------------------
-.button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-}
-.button:active {
-  color: #f7f000;
-  border: 2px solid #f7f000;
-}
 /* ----------------------------- MEDIA QUIERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
 /*---------------------------------------------------------------------------- */
@@ -664,8 +654,28 @@ Medium devices (640px and larger)
   header {
     padding: 24px;
   }
+  h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 0.85;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
   .col-md-5 {
     width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
   }
   .col-md-7 {
     width: 58.33%;
@@ -673,15 +683,49 @@ Medium devices (640px and larger)
   /* --------------------------------------------- HOME -------------------------------------------- */
   #hero .container,
   #work .container {
-    padding: 0 32px;
+    padding: 0 40px;
   }
 
+  #hero .yellowBoxMain {
+    width: 200px;
+    left: -5px;
+    top: -240px;
+  }
   #hero {
     padding: 275px 0px 56px 16px;
   }
 
   .hiddenOnMobile {
     display: inline-block;
+  }
+  .projTitleImage {
+    padding-left: 8px;
+  }
+  .projectDesc {
+    padding: 6px 0px 0 12px;
+  }
+  .button {
+    /* --- (box buttons) --- */
+    margin-top: 16px;
+  }
+  .yellowBoxButton .yellowBox {
+    left: 20px;
+    top: 0px;
+  }
+
+  .box-ad,
+  .box-ff,
+  .box-mf {
+    /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
+    padding: 32px 16px 0px 16px;
+    margin-bottom: 30px;
+  }
+  .box-ct,
+  .box-hh,
+  .box-ms {
+    /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
+    padding: 32px 16px 0px 16px;
+    margin-bottom: 30px;
   }
   /* -------------------------------------------- ABOUT -------------------------------------------- */
   .mePics1 {
