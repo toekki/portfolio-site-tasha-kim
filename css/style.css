@@ -725,8 +725,8 @@ Medium devices (640px and larger)
     margin-bottom: 30px;
   }
   /* ------------------ MD -------------------- ABOUT -------------------- MD ------------------ */
-  #aboutHero {
-    margin-left: 24px;
+  #aboutHero .container {
+    padding: 50px 36px 0 36px;
   }
   #aboutHero .yellowBoxMain {
     top: -90px;
@@ -736,16 +736,17 @@ Medium devices (640px and larger)
     -moz-box-shadow: unset;
     box-shadow: unset;
     border: 5px solid #000;
-    margin: 76px 0px 8px 24px;
+    margin: 64px 0px 8px 36px;
   }
   .mePics2 {
     border: 5px solid #000;
     line-height: 0;
     display: inline-block;
-    margin: 0 0px 0 24px;
+    margin: 0 0px 0 36px;
   }
   .mfAboutText {
-    margin-top: 64px;
+    margin-top: 52px;
+    padding-right: 24px;
   }
   /* ------------------ MD --------------------- MENU -------------------- MD ------------------ */
   .navigation {
@@ -819,8 +820,8 @@ Large devices (1024px or larger)
     margin-bottom: 40px;
   }
   /* ------------------ LG -------------------- ABOUT -------------------- LG ------------------ */
-  #aboutHero {
-    margin-left: 24px;
+  #aboutHero .container {
+    padding: 50px 160px 0 160px;
   }
   #aboutHero .yellowBoxMain {
     top: -90px;
@@ -830,16 +831,18 @@ Large devices (1024px or larger)
     -moz-box-shadow: unset;
     box-shadow: unset;
     border: 5px solid #000;
-    margin: 76px 0px 8px 24px;
+    margin: 64px 0px 8px 160px;
   }
   .mePics2 {
     border: 5px solid #000;
     line-height: 0;
     display: inline-block;
-    margin: 0 0px 0 24px;
+    margin: 0 0px 0 160px;
   }
   .mfAboutText {
-    margin-top: 64px;
+    margin-top: 52px;
+    padding-left: 8px;
+    padding-right: 116px;
   }
   /* ------------------ LG --------------------- MENU -------------------- LG ------------------ */
   .navigation {
