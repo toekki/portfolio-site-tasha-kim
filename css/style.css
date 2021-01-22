@@ -71,7 +71,7 @@ body {
   background-color: white;
   font-family: "proximanova-regular", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.25;
   color: #000000;
   margin: 0;
@@ -733,6 +733,9 @@ Large devices (1024px or larger)
   header {
     padding: 24px 48px 0 48px;
   }
+  h1 {
+    font-size: 52px;
+  }
   h2 {
     font-size: 38px;
   }
@@ -744,7 +747,7 @@ Large devices (1024px or larger)
     font-size: 13px;
   }
   body {
-    font-size: 17px;
+    font-size: 16.5px;
     line-height: 1.2;
   }
 
@@ -766,7 +769,7 @@ Large devices (1024px or larger)
   }
 
   #work .container {
-    padding: 0 24px;
+    padding: 0 48px;
   }
 
   .projTitleImage {
@@ -835,104 +838,110 @@ Large devices (1024px or larger)
 /* ===============================================================================================
 X-large devices (1440px or larger)
 ================================================================================================== */
-@media only screen and (min-width: 1440px) {header {
-  padding: 24px 48px 0 48px;
-}
-h2 {
-  font-size: 38px;
-}
-h3 {
-  font-size: 28px;
-  line-height: 1.1;
-}
-h4 {
-  font-size: 13px;
-}
-body {
-  font-size: 17px;
-  line-height: 1.2;
-}
+@media only screen and (min-width: 1440px) {
+  header {
+    padding: 24px 48px 0 48px;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  body {
+    font-size: 17px;
+    line-height: 1.25;
+  }
 
-.col-lg-3 {
-  width: 25%;
-}
-.col-lg-4 {
-  width: 33.33%;
-}
-.col-lg-8 {
-  width: 66.66%;
-}
-.col-lg-9 {
-  width: 75%;
-}
-/* ------------------ XL ----------------- HOME / INDEX ----------------- XL ------------------ */
-#hero {
-  padding: 275px 0px 72px 28px;
-}
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
 
-#work .container {
-  padding: 0 24px;
-}
+  /* ------------------ XL ----------------- HOME / INDEX ----------------- XL ------------------ */
+  #hero {
+    padding: 350px 0px 185px 8px;
+  }
 
-.projTitleImage {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-}
+  #work .container {
+    padding: 0 24px;
+  }
 
-.projectDesc {
-  padding: 156px 0px 0 16px;
-}
+  .projTitleImage {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 72px;
+  }
 
-.button {
-  /* --- (box buttons) --- */
-  margin-top: 96px;
-}
-.yellowBoxButton .yellowBox {
-  left: 20px;
-  top: 80px;
-}
+  .projectDesc {
+    padding: 185px 32px 0 24px;
+  }
 
-.box-ad,
-.box-ff,
-.box-mf {
-  /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
-  padding: 32px 16px 24px 16px;
-  margin-bottom: 40px;
-}
-.box-ct,
-.box-hh,
-.box-ms {
-  /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
-  padding: 32px 16px 24px 16px;
-  margin-bottom: 40px;
-}
-/* ------------------ XL -------------------- ABOUT -------------------- XL ------------------ */
-#aboutHero .container {
-  padding: 50px 160px 0 160px;
-}
-#aboutHero .yellowBoxMain {
-  top: -90px;
-}
-.mePics1 {
-  -webkit-box-shadow: unset;
-  -moz-box-shadow: unset;
-  box-shadow: unset;
-  border: 5px solid #000;
-  margin: 64px 0px 8px 160px;
-}
-.mePics2 {
-  border: 5px solid #000;
-  line-height: 0;
-  display: inline-block;
-  margin: 0 0px 0 160px;
-}
-.mfAboutText {
-  margin-top: 52px;
-  padding-left: 8px;
-  padding-right: 116px;
-}
-/* ------------------ XL --------------------- MENU -------------------- XL ------------------ */
-.navigation {
-  padding-top: 220px;
+  .button {
+    /* --- (box buttons) --- */
+    margin-top: 96px;
+  }
+  .yellowBoxButton .yellowBox {
+    left: 20px;
+    top: 80px;
+  }
+
+  .box-ad,
+  .box-ff,
+  .box-mf {
+    /*----- ARTSEE DECOR / FLY FIDO / MOTIV8 FORWARD ----- */
+    padding: 32px 16px 24px 16px;
+    margin-bottom: 40px;
+  }
+  .box-ct,
+  .box-hh,
+  .box-ms {
+    /*----- CLASSIC TWISTS / HEALTH HELP / MASHSPACE ----- */
+    padding: 32px 16px 24px 16px;
+    margin-bottom: 40px;
+  }
+  /* ------------------ XL -------------------- ABOUT -------------------- XL ------------------ */
+  #aboutHero .container {
+    padding: 50px 160px 0 160px;
+  }
+  #aboutHero .yellowBoxMain {
+    top: -90px;
+  }
+  .mePics1 {
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    border: 5px solid #000;
+    margin: 64px 0px 8px 160px;
+  }
+  .mePics2 {
+    border: 5px solid #000;
+    line-height: 0;
+    display: inline-block;
+    margin: 0 0px 0 160px;
+  }
+  .mfAboutText {
+    margin-top: 52px;
+    padding-left: 8px;
+    padding-right: 116px;
+  }
+  /* ------------------ XL --------------------- MENU -------------------- XL ------------------ */
+  .navigation {
+    padding-top: 220px;
+  }
 }
