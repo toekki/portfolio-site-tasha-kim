@@ -16,14 +16,6 @@
 }
 
 #mf .container {
-  /* ------ sections ------ */
-  display: inline-block;
-  padding: 0 0 32px 0;
-  position: relative;
-}
-
-#mf .innerContainer {
-  /* --- space above h1 --- */
   display: inline-block;
   padding: 0px 16px;
   position: relative;
@@ -50,10 +42,11 @@
 }
 #mf h2 {
   padding-top: 0px;
+  padding-bottom: 16px;
   text-align: center;
 }
 #mf h3 {
-  padding-top: 24px;
+  margin-top: 24px;
   padding-bottom: 12px;
   line-height: 0%;
 }
@@ -63,72 +56,99 @@
   padding: 0 16px;
 }
 
-/* --- actual image (not section) --- */
-.mfLowFi,
+.mfLowFi {
+  padding-top: 72px;
+  padding-bottom: 24px;
+}
+
+.mfLowFi picture {
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  line-height: 0%;
+}
+
+.mfMidFi picture {
+  padding: 0;
+  margin-bottom: 72px;
+  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  line-height: 0%;
+}
 .mfInspirationBrd {
-  width: 100%;
-  padding: 0;
-  margin: 12px 0 12px 0;
-  -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  line-height: 0%;
+  padding-top: 96px;
 }
-.mfMidFi {
-  width: 100%;
+.mfInspirationBrd picture {
   padding: 0;
-  margin: 12px 0 40px 0;
+  margin: 0px 0 16px 0;
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   line-height: 0%;
 }
 
-.mfWrapper1 {
-  padding: 64px 16px 0 16px;
+.mfTypeStylesColors {
+  padding-top: 96px;
 }
-
-.mfTypeStylesFonts {
-  padding: 20px 40px 0 40px;
+.mf-type {
+  padding: 16px 32px 0 32px;
 }
-.mfTypePicDesk {
+.mf-pic-desk {
   display: none;
 }
-.mfTypePicCar {
+.mf-pic-car {
   display: none;
 }
-.mfTypeColorPalette {
-  padding: 24px 30px 48px 30px;
+.mf-colors {
+  padding: 24px 24px 96px 24px;
 }
-
+.mfIconography {
+  padding: 0;
+}
 .mfIconsA {
   padding: 16px 40px 0 40px;
 }
 .mfIconsB {
-  padding: 18px 40px 0 40px;
-}
-
-.mfWrapper2 {
-  /* -- includes image & final -- */
-  padding: 48px 16px 0 16px;
+  padding: 18px 40px 96px 40px;
 }
 
 .mfMockupStudyImage {
-  margin: 0 0 48px 0;
+  margin: 0px 0 0px 0;
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   line-height: 0%;
 }
 
-.mfFinalDesigns {
-  padding: 16px 0 0px 0;
+.mfFinalDesignsSection {
+  margin-top: 96px;
 }
-
-#mf .yellowBoxButton {
-  display: inline-block;
-  z-index: 2;
-  padding-bottom: 48px;
+.mfFinalDesigns {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.mf1,
+.mf2,
+.mf3,
+.mf4,
+.mf5,
+.mf6,
+.mf7,
+.mf8,
+.mf9,
+.mf10,
+.mf11,
+.mf12,
+.mf13,
+.mf14 {
+  width: 5.5em;
+  height: auto;
+  padding: 0 4px;
+  margin: 0 auto;
+  align-content: center;
 }
 
 /* ----------------------------- MEDIA QUIERIES ------------------------------ */
@@ -140,35 +160,27 @@ Medium devices (640px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 640px) {
   .mfLogo {
-    width: 135px;
+    width: 145px;
     height: auto;
     display: inline-block;
-    padding: 157px 0 0 24px;
+    padding: 250px 0 0 24px;
     z-index: 2;
   }
 
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -380px;
+    top: -485px;
     margin: 0;
     z-index: -4;
     width: 100%;
   }
 
   #mf .container {
-    /* ------ sections ------ */
     display: inline-block;
-    padding: 0 0 32px 0;
+    padding: 0px 48px;
     position: relative;
-  }
-
-  #mf .innerContainer {
-    /* --- space above h1 --- */
-    display: inline-block;
-    padding: 0px 16px;
-    position: relative;
-    top: -1160px;
+    top: -485px;
   }
 
   #mfBackground {
@@ -186,102 +198,121 @@ Medium devices (640px and larger)
     display: inline-block;
   }
   #mf h1 {
-    padding-top: 32px;
+    padding-top: 40px;
     padding-bottom: 8px;
   }
   #mf h2 {
     padding-top: 0px;
+    padding-bottom: 16px;
     text-align: center;
   }
   #mf h3 {
-    padding-top: 24px;
+    margin-top: 24px;
     padding-bottom: 12px;
     line-height: 0%;
   }
 
   .mfIntroText {
     display: inline-block;
-    padding: 0 14px 0 420px;
+    padding: 0 16px;
   }
 
-  /* --- actual image (not section) --- */
-  .mfLowFi,
+  .mfLowFi {
+    padding-top: 128px;
+    padding-bottom: 24px;
+  }
+
+  .mfLowFi picture {
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfMidFi picture {
+    padding: 0;
+    margin-bottom: 72px;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
   .mfInspirationBrd {
-    width: 100%;
-    padding: 0;
-    margin: 12px 0 12px 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
+    padding-top: 120px;
   }
-  .mfMidFi {
-    width: 100%;
+  .mfInspirationBrd picture {
     padding: 0;
-    margin: 12px 0 40px 0;
+    margin: 0px 0 16px 0;
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     line-height: 0%;
   }
 
-  .mfWrapper1 {
-    padding: 64px 48px 0 48px;
+  .mfTypeStylesColors {
+    padding-top: 120px;
   }
-
-  .mfTypeStylesFonts {
-    padding: 64px 32px 0 48px;
+  .mf-type {
+    padding: 16px 32px 0 32px;
   }
-  .mfTypePicDesk {
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  .mf-pic-desk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .mf-pic-car {
     display: inline-block;
-    line-height: 0;
-    padding: 0%;
-    margin: 24px 48px 0 0;
   }
-  .mfTypePicCar {
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    display: inline-block;
-    line-height: 0;
-    margin: 0px 0 0 48px;
+  .mf-colors {
+    padding: 24px 24px 0 24px;
   }
-  .mfTypeColorPalette {
-    margin: 64px 8px 120px 0px;
+  .mfIconography {
+    padding-top: 120px;
   }
-
   .mfIconsA {
-    padding: 24px 8px 0 40px;
+    padding: 16px 40px 0 40px;
   }
   .mfIconsB {
-    padding: 26px 40px 0 8px;
-  }
-
-  .mfWrapper2 {
-    /* -- includes image & final -- */
-    padding: 56px 48px 0 48px;
+    padding: 18px 40px 0 40px;
   }
 
   .mfMockupStudyImage {
-    margin: 0 0 56px 0;
+    margin: 120px 0 0px 0;
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     line-height: 0%;
   }
 
-  .mfFinalDesigns {
-    /* -- image only -- */
-    padding: 24px 0 0px 0;
+  .mfFinalDesignsSection {
+    margin-top: 120px;
   }
-
-  #mf .yellowBoxButton {
-    display: inline-block;
-    z-index: 2;
-    padding-bottom: 48px;
+  .mfFinalDesigns {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .mf1,
+  .mf2,
+  .mf3,
+  .mf4,
+  .mf5,
+  .mf6,
+  .mf7,
+  .mf8,
+  .mf9,
+  .mf10,
+  .mf11,
+  .mf12,
+  .mf13,
+  .mf14 {
+    width: 11em;
+    height: auto;
+    padding: 0 8px;
+    align-content: center;
   }
 }
 
@@ -290,33 +321,25 @@ Large devices (1024px or larger)
 ================================================================================================== */
 @media only screen and (min-width: 1024px) {
   .mfLogo {
-    width: 225px;
+    width: 190px;
     height: auto;
     display: inline-block;
-    padding: 225px 0 0 56px;
+    padding: 250px 0 0 48px;
     z-index: 2;
   }
 
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -580px;
+    top: -600px;
     margin: 0;
     z-index: -4;
     width: 100%;
   }
 
   #mf .container {
-    /* ------ sections ------ */
     display: inline-block;
-    padding: 0 0 32px 0;
-    position: relative;
-  }
-
-  #mf .innerContainer {
-    /* --- space above h1 --- */
-    display: inline-block;
-    padding: 0px 16px;
+    padding: 0px 88px;
     position: relative;
     top: -1800px;
   }
@@ -336,107 +359,280 @@ Large devices (1024px or larger)
     display: inline-block;
   }
   #mf h1 {
-    padding-top: 48px;
+    padding-top: 56px;
     padding-bottom: 8px;
   }
   #mf h2 {
     padding-top: 0px;
+    padding-bottom: 16px;
     text-align: center;
   }
   #mf h3 {
-    padding-top: 40px;
-    padding-bottom: 16px;
+    margin-top: 40px;
+    padding-bottom: 24px;
     line-height: 0%;
   }
 
   .mfIntroText {
     display: inline-block;
-    padding: 0 24px 0 690px;
+    padding: 0 0px 0 632px;
   }
 
-  /* --- actual image (not section) --- */
-  .mfLowFi,
+  .mfLowFi {
+    padding-top: 128px;
+    padding-bottom: 24px;
+  }
+
+  .mfLowFi picture {
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfMidFi picture {
+    padding: 0;
+    margin-bottom: 72px;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
   .mfInspirationBrd {
-    width: 100%;
-    padding: 0;
-    margin: 12px 0 12px 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
+    padding-top: 168px;
   }
-  .mfMidFi {
-    width: 100%;
+  .mfInspirationBrd picture {
     padding: 0;
-    margin: 12px 0 120px 0;
+    margin: 0px 0 16px 0;
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     line-height: 0%;
   }
 
-  .mfWrapper1 {
-    /* -- includes wireframes & inspiration brd -- */
-    padding: 150px 72px 72px 72px;
+  .mfTypeStylesColors {
+    padding-top: 168px;
   }
-
-  .mfTypeStylesFonts {
-    padding: 88px 40px 0 72px;
+  .mf-type {
+    padding: 16px 32px 0 32px;
   }
-  .mfTypePicDesk {
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+  .mf-pic-desk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .mf-pic-car {
     display: inline-block;
-    line-height: 0;
-    padding: 0%;
-    margin: 24px 72px 0 0;
   }
-  .mfTypePicCar {
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    display: inline-block;
-    line-height: 0;
-    margin: 0px 0 0 72px;
+  .mf-colors {
+    padding: 24px 24px 0 24px;
   }
-  .mfTypeColorPalette {
-    margin: 96px 24px 264px 0px;
+  .mfIconography {
+    padding-top: 168px;
   }
-
   .mfIconsA {
-    padding: 40px 16px 0 56px;
+    padding: 16px 40px 0 40px;
   }
   .mfIconsB {
-    padding: 43px 56px 0 16px;
-  }
-
-  .mfWrapper2 {
-    /* -- includes image & final -- */
-    padding: 120px 72px 0 72px;
+    padding: 18px 40px 0 40px;
   }
 
   .mfMockupStudyImage {
-    margin: 0 0 120px 0;
+    margin: 168px 0 0px 0;
     -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
     line-height: 0%;
   }
 
-  .mfFinalDesigns {
-    /* -- image only -- */
-    padding: 32px 0 0px 0;
+  .mfFinalDesignsSection {
+    margin-top: 168px;
   }
-
-  #mf .yellowBoxButton {
-    display: inline-block;
-    z-index: 2;
-    padding-bottom: 48px;
+  .mfFinalDesigns {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  }
+  .mf1,
+  .mf2,
+  .mf3,
+  .mf4,
+  .mf5,
+  .mf6,
+  .mf7,
+  .mf8,
+  .mf9,
+  .mf10,
+  .mf11,
+  .mf12,
+  .mf13,
+  .mf14 {
+    width: 10em;
+    height: auto;
+    padding: 0 8px;
+    align-content: center;
   }
 }
 /* ===============================================================================================
 X-large devices (1440px or larger)
 ================================================================================================== */
 @media only screen and (min-width: 1440px) {
+  .mfLogo {
+    width: 255px;
+    height: auto;
+    display: inline-block;
+    padding: 325px 0 0 88px;
+    z-index: 2;
+  }
+
+  .mfMain {
+    /*---background phone image--*/
+    position: relative;
+    top: -775px;
+    margin: 0;
+    z-index: -4;
+    width: 100%;
+  }
+
+  #mf .container {
+    display: inline-block;
+    padding: 0px 88px;
+    position: relative;
+    top: -2490px;
+  }
+
+  #mfBackground {
+    /* ------- main background ------- */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    margin: 0;
+    width: 100%;
+  }
+
+  .projType {
+    /* --- UI DESIGN --- */
+    display: inline-block;
+  }
+  #mf h1 {
+    padding-top: 64px;
+    padding-bottom: 8px;
+  }
+  #mf h2 {
+    padding-top: 0px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  #mf h3 {
+    margin-top: 40px;
+    padding-bottom: 24px;
+    line-height: 0%;
+  }
+
+  .mfIntroText {
+    display: inline-block;
+    padding: 0 16px 0 948px;
+  }
+
+  .mfLowFi {
+    padding-top: 700px;
+    padding-bottom: 32px;
+  }
+
+  .mfLowFi picture {
+    padding: 0;
+    margin-top: 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfMidFi picture {
+    padding: 0;
+    margin-bottom: 72px;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+  .mfInspirationBrd {
+    padding-top: 200px;
+  }
+  .mfInspirationBrd picture {
+    padding: 0;
+    margin: 0px 0 16px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfTypeStylesColors {
+    padding-top: 200px;
+  }
+  .mf-type {
+    padding: 16px 32px 0 32px;
+  }
+  .mf-pic-desk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .mf-pic-car {
+    display: inline-block;
+  }
+  .mf-colors {
+    padding: 24px 24px 0 24px;
+  }
+  .mfIconography {
+    padding-top: 200px;
+  }
+  .mfIconsA {
+    padding: 16px 40px 0 40px;
+  }
+  .mfIconsB {
+    padding: 18px 40px 0 40px;
+  }
+
+  .mfMockupStudyImage {
+    margin: 200px 0 0px 0;
+    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
+    line-height: 0%;
+  }
+
+  .mfFinalDesignsSection {
+    margin-top: 200px;
+  }
+  .mfFinalDesigns {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  }
+  .mf1,
+  .mf2,
+  .mf3,
+  .mf4,
+  .mf5,
+  .mf6,
+  .mf7,
+  .mf8,
+  .mf9,
+  .mf10,
+  .mf11,
+  .mf12,
+  .mf13,
+  .mf14 {
+    width: 13.5em;
+    height: auto;
+    padding: 0 8px;
+    align-content: center;
+  }
 }

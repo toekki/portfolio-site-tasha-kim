@@ -167,16 +167,10 @@ header .container {
 
 #work .container {
   display: inline-block;
-  padding: 0px 0px;
+  padding: 24px 0 48px 0;
   width: 100%;
   margin: 0 auto;
   text-align: left;
-}
-
-#work .row {
-  padding-top: 0px;
-  padding-bottom: 16px;
-  background-color: none; /***********--------- TEST BACKGROUND COLOR HERE------------**********---------- */
 }
 
 .box-ad,
@@ -294,11 +288,16 @@ header .container {
 #about .yellowBoxButton {
   display: inline-block;
   z-index: 2;
+  top: -100px;
+  padding-left: 32px;
   padding-bottom: 48px;
 }
-
-.resumeDownloadSection {
-  padding: 48px 0 0 16px;
+#about .yellowBoxButton .yellowBox {
+  position: absolute;
+  width: 80px;
+  left: 72px;
+  top: 12px;
+  z-index: -1;
 }
 
 /* -------------------------- IMGs HOVER ANIMATION --------------------------- */
@@ -451,6 +450,7 @@ header .container {
 .yellowBoxButton {
   position: relative;
   display: inline-block;
+  z-index: 2;
 }
 .yellowBoxButton .yellowBox {
   position: absolute;
@@ -479,10 +479,27 @@ header .container {
 }
 
 .previousButton {
-  padding: 0 0 0 16px;
+  position: relative;
+  padding-top: 56px;
+}
+.previousButton .yellowBoxButton .yellowBox {
+  position: absolute;
+  width: 80px;
+  left: 16px;
+  top: 12px;
+  z-index: -1;
 }
 .nextButton {
+  position: relative;
   text-align: right;
+  padding-top: 56px;
+}
+.nextButton .yellowBoxButton .yellowBox {
+  position: absolute;
+  width: 80px;
+  left: 16px;
+  top: 12px;
+  z-index: -1;
 }
 
 /* -------------------------OVERALL LAYOUT STYLING -------------------------- */
@@ -490,7 +507,7 @@ header .container {
 
 .container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .maxWidth {
@@ -552,6 +569,12 @@ a:active {
   border-radius: 0px;
   border: 1px solid #9ba1a3; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
@@ -623,7 +646,7 @@ Medium devices (640px and larger)
     line-height: 1.1;
   }
   body {
-    font-size: 16px;
+    font-size: 15.5px;
     line-height: 1.35;
   }
 
@@ -698,18 +721,27 @@ Medium devices (640px and larger)
     z-index: -1;
   }
   /* ------------------ MD -------------------- ABOUT -------------------- MD ------------------ */
-  #aboutHero .container {
-    padding: 50px 43px 0 43px;
+
+  #aboutHero h1 {
+    margin: 0;
+    padding: 80px 16px 0px 48px;
+    display: inline-block;
+    width: 100%;
   }
   #aboutHero .yellowBoxMain {
-    top: -90px;
+    position: relative;
+    width: 150px;
+    left: 64px;
+    top: -88px;
+    z-index: -1;
+    display: inline-block;
   }
   .mePics1 {
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
     box-shadow: unset;
     border: 5px solid #000;
-    margin: 64px 0px 8px 43px;
+    margin: 56px 0px 6px 43px;
   }
   .mePics2 {
     border: 5px solid #000;
@@ -717,9 +749,24 @@ Medium devices (640px and larger)
     display: inline-block;
     margin: 0 0px 0 43px;
   }
-  .mfAboutText {
-    margin-top: 52px;
+  .aboutText {
+    margin-top: 44px;
     padding-right: 24px;
+  }
+
+  #about .yellowBoxButton {
+    display: inline-block;
+    z-index: 2;
+    top: -100px;
+    padding-left: 288px;
+    padding-bottom: 48px;
+  }
+  #about .yellowBoxButton .yellowBox {
+    position: absolute;
+    width: 80px;
+    left: 328px;
+    top: 8px;
+    z-index: -1;
   }
   /* ------------------ MD --------------------- MENU -------------------- MD ------------------ */
   .navigation {
@@ -747,8 +794,8 @@ Large devices (1024px or larger)
     font-size: 13px;
   }
   body {
-    font-size: 16.5px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .col-lg-3 {
@@ -806,12 +853,21 @@ Large devices (1024px or larger)
     margin-bottom: 40px;
   }
   /* ------------------ LG -------------------- ABOUT -------------------- LG ------------------ */
-  #aboutHero .container {
-    padding: 50px 160px 0 160px;
+  #aboutHero h1 {
+    margin: 0;
+    padding: 80px 16px 0px 160px;
+    display: inline-block;
+    width: 100%;
   }
   #aboutHero .yellowBoxMain {
+    position: relative;
+    width: 150px;
+    left: 188px;
     top: -90px;
+    z-index: -1;
+    display: inline-block;
   }
+
   .mePics1 {
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
@@ -825,10 +881,25 @@ Large devices (1024px or larger)
     display: inline-block;
     margin: 0 0px 0 160px;
   }
-  .mfAboutText {
+  .aboutText {
     margin-top: 52px;
-    padding-left: 8px;
-    padding-right: 116px;
+    padding-left: 0px;
+    padding-right: 72px;
+  }
+
+  #about .yellowBoxButton {
+    display: inline-block;
+    z-index: 2;
+    top: -168px;
+    padding-left: 448px;
+    padding-bottom: 48px;
+  }
+  #about .yellowBoxButton .yellowBox {
+    position: absolute;
+    width: 80px;
+    left: 482px;
+    top: 80px;
+    z-index: -1;
   }
   /* ------------------ LG --------------------- MENU -------------------- LG ------------------ */
   .navigation {
@@ -916,29 +987,52 @@ X-large devices (1440px or larger)
     margin-bottom: 40px;
   }
   /* ------------------ XL -------------------- ABOUT -------------------- XL ------------------ */
-  #aboutHero .container {
-    padding: 50px 160px 0 160px;
+  #aboutHero h1 {
+    margin: 0;
+    padding: 96px 16px 0px 208px;
+    display: inline-block;
+    width: 100%;
   }
   #aboutHero .yellowBoxMain {
-    top: -90px;
+    position: relative;
+    width: 150px;
+    left: 236px;
+    top: -92px;
+    z-index: -1;
+    display: inline-block;
   }
   .mePics1 {
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
     box-shadow: unset;
     border: 5px solid #000;
-    margin: 64px 0px 8px 160px;
+    margin: 56px 0px 8px 208px;
   }
   .mePics2 {
     border: 5px solid #000;
     line-height: 0;
     display: inline-block;
-    margin: 0 0px 0 160px;
+    margin: 0 0px 0 208px;
   }
-  .mfAboutText {
-    margin-top: 52px;
-    padding-left: 8px;
-    padding-right: 116px;
+  .aboutText {
+    margin-top: 44px;
+    padding-left: 4px;
+    padding-right: 136px;
+  }
+
+  #about .yellowBoxButton {
+    display: inline-block;
+    z-index: 2;
+    top: -168px;
+    padding-left: 528px;
+    padding-bottom: 48px;
+  }
+  #about .yellowBoxButton .yellowBox {
+    position: absolute;
+    width: 80px;
+    left: 568px;
+    top: 79px;
+    z-index: -1;
   }
   /* ------------------ XL --------------------- MENU -------------------- XL ------------------ */
   .navigation {
