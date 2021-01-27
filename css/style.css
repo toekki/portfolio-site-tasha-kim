@@ -150,7 +150,7 @@ header .container {
   display: inline-block;
 }
 #hero {
-  padding: 200px 0px 25px 16px;
+  padding: 160px 16px 25px 16px;
 }
 #hero h1 {
   text-align: left;
@@ -167,7 +167,7 @@ header .container {
 
 #work .container {
   display: inline-block;
-  padding: 24px 0 48px 0;
+  padding: -100px 0 0px 0;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -207,6 +207,56 @@ header .container {
 #work p {
   padding: 1px 0 16px 0;
 }
+/* ------------ CSS ANIMATION ------------ */
+#wanderand {
+  width: 100%;
+  height: auto;
+  padding: 0 0px;
+  position: relative;
+  top: -115px;
+  z-index: -1;
+}
+/* ---------------------------------------- */
+@keyframes color-change {
+  0% {
+    fill: #4d4d4d;
+  }
+  50% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #f7f000;
+  }
+}
+.st0 {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} /*---abbreviated version of the rules above:
+  .sun {
+  animation: 4s color-change infinite alternate linear;
+} ---*/
+/* ---------------------------------------- */
+@keyframes knowme-move {
+  from {
+    transform: translate(0, 2px);
+  }
+  to {
+    transform: translate(2px, -5px);
+  }
+}
+#knowme-grfx {
+  animation-duration: 1s;
+  animation-name: knowme-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} /* ---abbreviated version to the rules above:
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+} --- */
 
 /* ------------------------------- MENU PAGE -------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -341,7 +391,7 @@ header .container {
 .knowme:active {
   width: 28px;
   height: 39px;
-  transition: 150ms ease-in-out;
+  transition: 250ms ease-in-out;
   margin: auto;
 }
 
@@ -661,7 +711,7 @@ Medium devices (640px and larger)
   }
   /* ------------------ MD ----------------- HOME / INDEX ----------------- MD ------------------ */
   #hero {
-    padding: 275px 0px 56px 16px;
+    padding: 275px 16px 56px 16px;
   }
   #hero .container {
     padding: 0 20px;
@@ -677,6 +727,16 @@ Medium devices (640px and larger)
     padding: 0 40px;
   }
 
+  /* -----MD----Start CSS ANIMATION -----MD---- */
+  #wanderand {
+    width: 100%;
+    height: auto;
+    padding: 0 4px 0 16px;
+    position: relative;
+    top: 10px;
+    z-index: -1;
+  }
+  /* ------------------------------------------- */
   .hiddenOnMobile {
     display: inline-block;
   }
@@ -804,6 +864,12 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 33.33%;
   }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
   .col-lg-8 {
     width: 66.66%;
   }
@@ -818,6 +884,17 @@ Large devices (1024px or larger)
   #work .container {
     padding: 0 48px;
   }
+
+  /* -----LG----Start CSS ANIMATION -----LG---- */
+  #wanderand {
+    width: 100%;
+    height: auto;
+    padding: 0 48px 0 16px;
+    position: relative;
+    top: -85px;
+    z-index: -1;
+  }
+  /* ------------------------------------------- */
 
   .projTitleImage {
     padding-top: 24px;
