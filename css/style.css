@@ -528,30 +528,6 @@ header .container {
   background-color: #000000;
 }
 
-.previousButton {
-  position: relative;
-  padding-top: 56px;
-}
-.previousButton .yellowBoxButton .yellowBox {
-  position: absolute;
-  width: 80px;
-  left: 16px;
-  top: 12px;
-  z-index: -1;
-}
-.nextButton {
-  position: relative;
-  text-align: right;
-  padding-top: 56px;
-}
-.nextButton .yellowBoxButton .yellowBox {
-  position: absolute;
-  width: 80px;
-  left: 16px;
-  top: 12px;
-  z-index: -1;
-}
-
 /* -------------------------OVERALL LAYOUT STYLING -------------------------- */
 /* -------------------------------------------------------------------------- */
 
@@ -880,6 +856,9 @@ Large devices (1024px or larger)
   #hero {
     padding: 275px 0px 72px 28px;
   }
+  #hero .container {
+    padding: 24px 20px 102px 20px;
+  }
 
   #work .container {
     padding: 0 48px;
@@ -1023,12 +1002,23 @@ X-large devices (1440px or larger)
 
   /* ------------------ XL ----------------- HOME / INDEX ----------------- XL ------------------ */
   #hero {
-    padding: 350px 0px 185px 8px;
+    padding: 388px 0px 216px 8px;
   }
 
   #work .container {
     padding: 0 24px;
   }
+
+  /* -----LG----Start CSS ANIMATION -----LG---- */
+  #wanderand {
+    width: 100%;
+    height: auto;
+    padding: 0 48px 100px 16px;
+    position: relative;
+    top: -135px;
+    z-index: -1;
+  }
+  /* ------------------------------------------- */
 
   .projTitleImage {
     padding-top: 24px;
