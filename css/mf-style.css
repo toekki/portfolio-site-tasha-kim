@@ -296,7 +296,7 @@ Large devices (1024px or larger)
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -600px;
+    top: -640px;
     margin: 0;
     z-index: -4;
     width: 100%;
@@ -306,7 +306,7 @@ Large devices (1024px or larger)
     display: inline-block;
     padding: 0px 88px;
     position: relative;
-    top: -1800px;
+    top: -2100px;
   }
 
   #mfBackground {
@@ -340,11 +340,11 @@ Large devices (1024px or larger)
 
   .mfIntroText {
     display: inline-block;
-    padding: 0;
+    padding: 0px;
   }
 
   .mfLowFi {
-    padding-top: 128px;
+    padding-top: 625px;
     padding-bottom: 24px;
   }
 
@@ -473,11 +473,11 @@ X-large devices (1440px or larger)
 
   .mfIntroText {
     display: inline-block;
-    padding: 0 16px 0 948px;
+    padding: 0px;
   }
 
   .mfLowFi {
-    padding-top: 700px;
+    padding-top: 825px;
     padding-bottom: 32px;
   }
 
@@ -489,29 +489,26 @@ X-large devices (1440px or larger)
     padding-top: 200px;
   }
   .mf-type {
-    padding: 16px 32px 0 32px;
+    padding: 100px 56px 0 8px;
   }
   .mf-pic-desk {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    display: inline-block;
+    padding-top: 8px;
   }
   .mf-pic-car {
     display: inline-block;
   }
   .mf-colors {
-    padding: 24px 24px 0 24px;
+    padding: 112px 0px 0 24px;
   }
   .mfIconography {
     padding-top: 200px;
   }
   .mfIconsA {
-    padding: 16px 40px 0 40px;
+    padding: 16px 18px 0 40px;
   }
   .mfIconsB {
-    padding: 18px 40px 0 40px;
+    padding: 18px 40px 0 18px;
   }
 
   .mfMockupStudyImage {

@@ -991,12 +991,20 @@ X-large devices (1440px or larger)
     font-size: 17px;
     line-height: 1.25;
   }
-
+  .col-xl-cust2 {
+    width: 14.25%;
+  }
   .col-xl-3 {
     width: 25%;
   }
   .col-xl-4 {
     width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
   }
   .col-xl-cust7 {
     width: (100%/7);
@@ -1006,6 +1014,9 @@ X-large devices (1440px or larger)
   }
   .col-xl-9 {
     width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
   }
 
   /* ------------------ XL ----------------- HOME / INDEX ----------------- XL ------------------ */
