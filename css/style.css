@@ -675,7 +675,12 @@ Medium devices (640px and larger)
     font-size: 15.5px;
     line-height: 1.35;
   }
-
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
   .col-md-5 {
     width: 41.66%;
   }
@@ -987,16 +992,19 @@ X-large devices (1440px or larger)
     line-height: 1.25;
   }
 
-  .col-lg-3 {
+  .col-xl-3 {
     width: 25%;
   }
-  .col-lg-4 {
+  .col-xl-4 {
     width: 33.33%;
   }
-  .col-lg-8 {
+  .col-xl-cust7 {
+    width: calc (100%/7);
+  }
+  .col-xl-8 {
     width: 66.66%;
   }
-  .col-lg-9 {
+  .col-xl-9 {
     width: 75%;
   }
 

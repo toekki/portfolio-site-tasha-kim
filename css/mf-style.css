@@ -61,33 +61,25 @@
   padding-bottom: 24px;
 }
 
-.mfLowFi picture {
-  padding: 0;
-  margin: 0;
+.mfLowFi img {
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  line-height: 0%;
 }
 
-.mfMidFi picture {
-  padding: 0;
-  margin-bottom: 72px;
+.mfMidFi img {
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  line-height: 0%;
 }
+
 .mfInspirationBrd {
   padding-top: 96px;
 }
-.mfInspirationBrd picture {
-  padding: 0;
-  margin: 0px 0 16px 0;
+.mfInspirationBrd img {
   -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-  line-height: 0%;
 }
 
 .mfTypeStylesColors {
@@ -127,57 +119,26 @@
   margin-top: 96px;
 }
 
-.mfFinalDesigns {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-auto-columns: auto;
-  grid-gap: 10px;
-  padding: 10px;
-  align-content: center;
-}
-/* -- 
-.mf1,
-.mf2,
-.mf3,
-.mf4,
-.mf5,
-.mf6,
-.mf7,
-.mf8,
-.mf9,
-.mf10,
-.mf11,
-.mf12,
-.mf13,
-.mf14 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-auto-columns: auto;
-  padding: 10px;
-  align-content: center;
-}
----- */
-
-#mf .previousButton {
+#mf .hhButton {
   position: relative;
   padding-top: 56px;
 }
-#mf .previousButton .yellowBoxButton .yellowBox {
+#mf .hhButton .yellowBoxButton .yellowBox {
   position: absolute;
   width: 80px;
   left: 16px;
   top: 12px;
   z-index: -1;
 }
-#mf .nextButton {
+#mf .msButton {
   position: relative;
   text-align: right;
   padding-top: 56px;
 }
-#mf .nextButton .yellowBoxButton .yellowBox {
+#mf .msButton .yellowBoxButton .yellowBox {
   position: absolute;
   width: 80px;
-  left: 16px;
+  left: 13px;
   top: 12px;
   z-index: -1;
 }
@@ -253,33 +214,8 @@ Medium devices (640px and larger)
     padding-bottom: 24px;
   }
 
-  .mfLowFi picture {
-    padding: 0;
-    margin: 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
-
-  .mfMidFi picture {
-    padding: 0;
-    margin-bottom: 72px;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
   .mfInspirationBrd {
     padding-top: 120px;
-  }
-  .mfInspirationBrd picture {
-    padding: 0;
-    margin: 0px 0 16px 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
   }
 
   .mfTypeStylesColors {
@@ -322,50 +258,27 @@ Medium devices (640px and larger)
   .mfFinalDesignsSection {
     margin-top: 120px;
   }
-  .mfFinalDesigns {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-  .mf1,
-  .mf2,
-  .mf3,
-  .mf4,
-  .mf5,
-  .mf6,
-  .mf7,
-  .mf8,
-  .mf9,
-  .mf10,
-  .mf11,
-  .mf12,
-  .mf13,
-  .mf14 {
-    width: 11em;
-    height: auto;
-    padding: 0 8px;
-    align-content: center;
-  }
 
-  #mf .previousButton {
+  #mf .hhButton {
     position: relative;
     padding-top: 56px;
   }
-  #mf .previousButton .yellowBoxButton .yellowBox {
+  #mf .hhButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
     left: 16px;
     top: 10px;
     z-index: -1;
   }
-  #mf .nextButton {
+  #mf .msButton {
     position: relative;
     text-align: right;
     padding-top: 56px;
   }
-  #mf .nextButton .yellowBoxButton .yellowBox {
+  #mf .msButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
-    left: 16px;
+    left: 14px;
     top: 10px;
     z-index: -1;
   }
@@ -430,7 +343,7 @@ Large devices (1024px or larger)
 
   .mfIntroText {
     display: inline-block;
-    padding: 0 0px 0 632px;
+    padding: 0;
   }
 
   .mfLowFi {
@@ -438,33 +351,8 @@ Large devices (1024px or larger)
     padding-bottom: 24px;
   }
 
-  .mfLowFi picture {
-    padding: 0;
-    margin: 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
-
-  .mfMidFi picture {
-    padding: 0;
-    margin-bottom: 72px;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
   .mfInspirationBrd {
     padding-top: 168px;
-  }
-  .mfInspirationBrd picture {
-    padding: 0;
-    margin: 0px 0 16px 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
   }
 
   .mfTypeStylesColors {
@@ -507,47 +395,24 @@ Large devices (1024px or larger)
   .mfFinalDesignsSection {
     margin-top: 168px;
   }
-  .mfFinalDesigns {
-    display: grid;
-    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
-  }
-  .mf1,
-  .mf2,
-  .mf3,
-  .mf4,
-  .mf5,
-  .mf6,
-  .mf7,
-  .mf8,
-  .mf9,
-  .mf10,
-  .mf11,
-  .mf12,
-  .mf13,
-  .mf14 {
-    width: 10em;
-    height: auto;
-    padding: 0 8px;
-    align-content: center;
-  }
 
-  #mf .previousButton {
+  #mf .hhButton {
     position: relative;
     padding-top: 56px;
   }
-  #mf .previousButton .yellowBoxButton .yellowBox {
+  #mf .hhButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
     left: 16px;
     top: 80px;
     z-index: -1;
   }
-  #mf .nextButton {
+  #mf .msButton {
     position: relative;
     text-align: right;
     padding-top: 56px;
   }
-  #mf .nextButton .yellowBoxButton .yellowBox {
+  #mf .msButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
     left: 16px;
@@ -622,33 +487,8 @@ X-large devices (1440px or larger)
     padding-bottom: 32px;
   }
 
-  .mfLowFi picture {
-    padding: 0;
-    margin-top: 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
-
-  .mfMidFi picture {
-    padding: 0;
-    margin-bottom: 72px;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
-  }
   .mfInspirationBrd {
     padding-top: 200px;
-  }
-  .mfInspirationBrd picture {
-    padding: 0;
-    margin: 0px 0 16px 0;
-    -webkit-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: -7px 8px 22px 0px rgba(50, 50, 50, 0.2);
-    line-height: 0%;
   }
 
   .mfTypeStylesColors {
@@ -691,47 +531,24 @@ X-large devices (1440px or larger)
   .mfFinalDesignsSection {
     margin-top: 200px;
   }
-  .mfFinalDesigns {
-    display: grid;
-    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
-  }
-  .mf1,
-  .mf2,
-  .mf3,
-  .mf4,
-  .mf5,
-  .mf6,
-  .mf7,
-  .mf8,
-  .mf9,
-  .mf10,
-  .mf11,
-  .mf12,
-  .mf13,
-  .mf14 {
-    width: 13.5em;
-    height: auto;
-    padding: 0 8px;
-    align-content: center;
-  }
 
-  #mf .previousButton {
+  #mf .hhButton {
     position: relative;
     padding-top: 56px;
   }
-  #mf .previousButton .yellowBoxButton .yellowBox {
+  #mf .hhButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
     left: 16px;
     top: 80px;
     z-index: -1;
   }
-  #mf .nextButton {
+  #mf .msButton {
     position: relative;
     text-align: right;
     padding-top: 56px;
   }
-  #mf .nextButton .yellowBoxButton .yellowBox {
+  #mf .msButton .yellowBoxButton .yellowBox {
     position: absolute;
     width: 80px;
     left: 16px;

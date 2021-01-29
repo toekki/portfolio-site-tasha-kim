@@ -1,4 +1,4 @@
-alert("\"Howdy there, Folks!\"");
+// alert("\"Howdy there, Folks!\"");
 console.log("\"Howdy there, Folks!\"")
 console.log("console log by itself is just text - as long as you use quotes")
 
