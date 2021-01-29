@@ -999,7 +999,7 @@ X-large devices (1440px or larger)
     width: 33.33%;
   }
   .col-xl-cust7 {
-    width: calc (100%/7);
+    width: (100%/7);
   }
   .col-xl-8 {
     width: 66.66%;
