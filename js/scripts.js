@@ -487,3 +487,84 @@ console.log('isEqual value:', isEqual);
 // https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
 console.log('---------------');
 
+
+//---------------------------------------------------//
+//--- Chaining Conditions ---
+console.log("<<<--------------- Chaining Conditions ----------------->>>")
+
+if (true && true) {
+	// Yes!
+	// Try console.log in these statements to test it out
+}
+if (true && false) {
+	// No...
+}
+if ("text" && 0) {
+	// No - 0 is not truthy!
+}
+var age = 15;
+if (age > 12 && age <= 20) {
+	// Yes!
+}
+var isTeenager = age > 12 && age <= 19; // the variable will now contain "true"
+console.log('isTeenager', isTeenager);  //Output:  isTeenager true
+
+// The OR operator works in a similar manner, but will result in a truthy value even if only one of the values (or both) is truthy:
+
+if (true || true) {
+	// Yes!
+}
+if (true || false) {
+	// Yes
+}
+if (false || 10 < 5) {
+	// No...
+}
+
+console.log('------ Diving deeper ------');
+
+var field1 = true || false; // will be true
+var field2 = false || true; // will also be true
+var field3 = false || "hello"; // will be "hello"
+var field4 = 100 || "hello"; // will be 100
+
+// When using the OR operator in an if-condition, this distinction doesn’t make much difference. It can, however, also be used for other things. For example, if you want to provide a default value:
+
+var userInput = ""; // This might come from somewhere else
+
+function someFunction(userInput) {
+	// If userInput was empty, use "Default text", else use the userInput...
+	var myValue = userInput || "Default text";
+	// Do something more
+	return myValue;
+}
+// Finally, you can also chain multiple conditions together. You can use parentheses the same way as with any other mathematical equation:
+
+if (true && (false || true) && (10 > 5)) {
+	// Yes!
+	var result = someFunction(); // testing the someFunction
+	console.log(result);
+
+	var result2 = someFunction('hey what\s going on'); // testing the someFunction with custom input
+	console.log(result2);
+
+	var test3 = true;
+	var result3 = someFunction(test3); // testing the someFunction with custom input through a variable
+	console.log(result3);
+}
+
+
+
+//---------------------------------------------------//
+//--- Loops ---
+console.log("<<<-------------------- Loops ---------------------->>>")
+
+for (var i = 1; i <= 100; i++) {
+    console.log(i)} // loop prints out all values from 1 to 100
+
+    var ages = [15, 20, 25, 30];
+    for (var i = 0; i < ages.length; i++) {
+      console.log(ages[i]);
+    }
+
+    
