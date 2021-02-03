@@ -567,4 +567,41 @@ for (var i = 1; i <= 100; i++) {
       console.log(ages[i]);
     }
 
-    
+
+    //-------------------------------------------------------------//
+    //------------------------TASK 2.2.1---------------------------//
+    //-------------------------------------------------------------//
+    function validate(userInput) {
+        if(!userInput){
+            window.alert("Email message is required.");
+                return false;
+        } else if (userInput.length>20){
+            window.alert("Your email message must be of maximum 20 characters.");
+                return false;
+        } else if (userInput==="Bobby"){
+            window.alert("Bobby is not acceptable as a valid email address.");
+                return false;
+        } else {console.log("True");}
+    }
+
+    //-------------------------------------------------------------//
+    //------------------------TASK 2.2.2---------------------------//
+    //-------------------------------------------------------------//
+    function checkNumber(value) { 
+    if (value==0 || value>90 ||
+        (value>=10 && value<=20) ||
+        (value>=42 && value<=43) ||
+        (value>=60 && value<=80)){
+     return true; }
+       else {return false;}
+     }
+
+    //-------------------------------------------------------------//
+    //------------------------TASK 2.2.3---------------------------//
+    //-------------------------------------------------------------//
+
+    function startButtonClicked() {
+        for(var i=100; i<=200; i++) {
+        textOutput(i);
+        }
+        }
