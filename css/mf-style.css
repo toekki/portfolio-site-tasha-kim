@@ -6,11 +6,16 @@
   position: absolute;
   z-index: 2;
 }
+.mfIntroText {
+  position: absolute;
+  top: 148%;
+  padding: 0 32px 0 16px;
+  width: 100%;
+}
 
 .mfMain {
   /*---background phone image--*/
   position: relative;
-  top: -52px;
   z-index: -4;
   width: 100%;
 }
@@ -19,12 +24,13 @@
   display: inline-block;
   padding: 0px 16px;
   position: relative;
-  top: -250px;
 }
 
 #mfBackground {
   /* ------- main background ------- */
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: -5;
   margin: 0;
   width: 100%;
@@ -49,13 +55,8 @@
   line-height: 0%;
 }
 
-.mfIntroText {
-  display: inline-block;
-  padding: 0 16px;
-}
-
 .mfLowFi {
-  padding-top: 72px;
+  padding-top: 724px;
   padding-bottom: 24px;
 }
 
@@ -157,11 +158,17 @@ Medium devices (640px and larger)
     position: absolute;
     z-index: 2;
   }
+  .mfIntroText {
+    position: absolute;
+    top: 208%;
+    padding: 0 56px 0 48px;
+    width: 100%;
+  }
 
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -125px;
+    top: -32px;
     z-index: -4;
     width: 100%;
   }
@@ -170,7 +177,6 @@ Medium devices (640px and larger)
     display: inline-block;
     padding: 0px 48px;
     position: relative;
-    top: -485px;
   }
 
   #mfBackground {
@@ -202,9 +208,8 @@ Medium devices (640px and larger)
     line-height: 0%;
   }
 
-  .mfIntroText {
-    display: inline-block;
-    padding: 0 16px;
+  .mfLowFi {
+    padding-top: 616px;
   }
 
   .mfInspirationBrd {
@@ -286,11 +291,17 @@ Large devices (1024px or larger)
     left: 48px;
     z-index: 2;
   }
+  .mfIntroText {
+    position: absolute;
+    top: 180%;
+    left: 65%;
+    width: 35%;
+  }
 
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -200px;
+    top: -52px;
     margin: 0;
     z-index: -4;
     width: 100%;
@@ -300,7 +311,6 @@ Large devices (1024px or larger)
     display: inline-block;
     padding: 0px 88px;
     position: relative;
-    top: -2100px;
   }
 
   #mfBackground {
@@ -332,13 +342,9 @@ Large devices (1024px or larger)
     line-height: 0%;
   }
 
-  .mfIntroText {
-    display: inline-block;
-    padding: 0px;
-  }
-  /* ----
   .mfLowFi {
-  }  ---*/
+    padding-top: 0px;
+  }
 
   .mfInspirationBrd {
     padding-top: 168px;
@@ -418,11 +424,17 @@ X-large devices (1440px or larger)
     left: 56px;
     z-index: 2;
   }
+  .mfIntroText {
+    position: absolute;
+    top: 210%;
+    left: 67%;
+    width: 27%;
+  }
 
   .mfMain {
     /*---background phone image--*/
     position: relative;
-    top: -305px;
+    top: -200px;
     margin: 0;
     z-index: -4;
     width: 100%;
@@ -461,11 +473,6 @@ X-large devices (1440px or larger)
     margin-top: 40px;
     padding-bottom: 24px;
     line-height: 0%;
-  }
-
-  .mfIntroText {
-    display: inline-block;
-    padding: 0px;
   }
 
   .mfInspirationBrd {

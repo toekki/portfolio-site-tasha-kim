@@ -367,9 +367,9 @@ header .container {
   width: 18px;
   height: 16px;
   transition: 150ms ease-in-out;
-  margin: auto;
-
-  margin-bottom: 112px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 48px;
 }
 .arrowup:hover {
   background: url("../img/1-home/1-imgs/arrow-dots.svg") no-repeat;
