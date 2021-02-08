@@ -293,7 +293,7 @@ Large devices (1024px or larger)
   }
   .mfIntroText {
     position: absolute;
-    top: 180%;
+    top: 1400px;
     left: 65%;
     width: 35%;
   }
@@ -426,7 +426,7 @@ X-large devices (1440px or larger)
   }
   .mfIntroText {
     position: absolute;
-    top: 210%;
+    top: 1900px;
     left: 67%;
     width: 27%;
   }
