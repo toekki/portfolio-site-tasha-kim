@@ -8,7 +8,7 @@
 }
 .mfIntroText {
   position: absolute;
-  top: 148%;
+  top: 850px;
   padding: 0 32px 0 16px;
   width: 100%;
 }
@@ -160,7 +160,7 @@ Medium devices (640px and larger)
   }
   .mfIntroText {
     position: absolute;
-    top: 208%;
+    top: 1650px;
     padding: 0 56px 0 48px;
     width: 100%;
   }
@@ -426,7 +426,7 @@ X-large devices (1440px or larger)
   }
   .mfIntroText {
     position: absolute;
-    top: 1900px;
+    top: 150%;
     left: 67%;
     width: 27%;
   }
