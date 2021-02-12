@@ -271,6 +271,9 @@ header .container {
   line-height: 1.9;
   padding: 104px 0 88px 0;
 }
+.navigation .avoid-click {
+  pointer-events: none;
+}
 
 /* ------------------------------ ABOUT ME PAGE ----------------------------- */
 /* -------------------------------------------------------------------------- */
