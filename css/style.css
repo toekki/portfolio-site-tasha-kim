@@ -517,7 +517,39 @@ header .container {
   transition: 0.2s opacity;
 }
 .button:hover {
-  background-color: #000000;
+  background-color: #000 000;
+}
+/* ---- (disabled button / avoid click) ---- */
+/* ----------------------------------------- */
+.yellowBoxButtonAvoid {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+.yellowBoxButtonAvoid .yellowBoxAvoid {
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  top: 12px;
+  z-index: -1;
+}
+
+.buttonAvoid {
+  /* KEEP THESE BUTTON RULES AT THE END OR TOWARDS THE BOTTOM! */
+  display: inline-block; /* note the <a> tag is inline by default */
+  background-color: none;
+  color: #9ba1a3; /* needed to override the default link color */
+  font-weight: 300;
+  font-size: 13px;
+  padding: 8px 15px;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border: 1px solid #9ba1a3; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.buttonAvoid:hover {
+  background-color: #4d4d4d;
 }
 
 /* -------------------------OVERALL LAYOUT STYLING -------------------------- */
