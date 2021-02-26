@@ -4,7 +4,7 @@ Primary Color (Black): #000000;
 Secondary Color (White): #FFFFFF;
 Secondary Color (Blue-Gray): #E2E6E9; Artsee Decor
 Secondary Color (Dark-Gray): #4D4D4D;
-Accent Color (Mid-Gray): #9BA1A3;
+Accent Color (Mid-Gray): #9BA1A3; then changed to #6f7274
 Accent Color	(Light-Gray): #F5F5F5;
 Accent Color (Yellow): #F7F000;
 Footer Gray grfx/text: #727272;
@@ -59,7 +59,7 @@ h4 {
 h4 {
   font-size: 0.8em;
   font-weight: 300;
-  color: #9ba1a3;
+  color: #6f7274;
   margin: 0;
 }
 
