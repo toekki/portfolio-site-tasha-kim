@@ -283,6 +283,16 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================================================================================== */
 @media only screen and (min-width: 1024px) {
+  #mfBackground {
+    /* ------- main background ------- */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    margin: 0;
+    width: 100%;
+  }
+
   .mfLogo {
     width: 175px;
     height: auto;
@@ -444,16 +454,6 @@ X-large devices (1440px or larger)
     display: inline-block;
     padding: 0px 200px;
     position: relative;
-  }
-
-  #mfBackground {
-    /* ------- main background ------- */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    margin: 0;
-    width: 100%;
   }
 
   .projType {
