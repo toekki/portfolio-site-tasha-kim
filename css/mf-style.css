@@ -174,16 +174,6 @@ Medium devices (640px and larger)
     position: relative;
   }
 
-  /* ------- main background
-  #mfBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    margin: 0;
-    width: 100%;
-  }  ------- */
-
   .projType {
     /* --- UI DESIGN --- */
     display: inline-block;
@@ -308,16 +298,6 @@ Large devices (1024px or larger)
     position: relative;
   }
 
-  /* ------- main background
-  #mfBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    margin: 0;
-    width: 100%;
-  }  ------- */
-
   .projType {
     /* --- UI DESIGN --- */
     display: inline-block;
@@ -440,16 +420,6 @@ X-large devices (1440px or larger)
     padding: 0px 200px;
     position: relative;
   }
-
-  /* ------- main background
-  #mfBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    margin: 0;
-    width: 100%;
-  }  ------- */
 
   .projType {
     /* --- UI DESIGN --- */
