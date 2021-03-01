@@ -26,15 +26,19 @@
   position: relative;
 }
 
+/* -------  main background
 #mfBackground {
-  /* ------- main background ------- */
   position: fixed;
   top: 0;
   left: 0;
   z-index: -5;
   margin: 0;
   width: 100%;
-}
+} 
+
+body {
+  background-image: lightgreen;
+} ------- */
 
 .projType {
   /* --- UI DESIGN --- */
@@ -179,15 +183,15 @@ Medium devices (640px and larger)
     position: relative;
   }
 
+  /* ------- main background
   #mfBackground {
-    /* ------- main background ------- */
     position: fixed;
     top: 0;
     left: 0;
     z-index: -5;
     margin: 0;
     width: 100%;
-  }
+  }  ------- */
 
   .projType {
     /* --- UI DESIGN --- */
@@ -313,15 +317,15 @@ Large devices (1024px or larger)
     position: relative;
   }
 
+  /* ------- main background
   #mfBackground {
-    /* ------- main background ------- */
     position: fixed;
     top: 0;
     left: 0;
     z-index: -5;
     margin: 0;
     width: 100%;
-  }
+  }  ------- */
 
   .projType {
     /* --- UI DESIGN --- */
@@ -446,15 +450,15 @@ X-large devices (1440px or larger)
     position: relative;
   }
 
+  /* ------- main background
   #mfBackground {
-    /* ------- main background ------- */
     position: fixed;
     top: 0;
     left: 0;
     z-index: -5;
     margin: 0;
     width: 100%;
-  }
+  }  ------- */
 
   .projType {
     /* --- UI DESIGN --- */
