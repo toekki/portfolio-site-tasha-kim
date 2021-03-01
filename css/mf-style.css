@@ -16,7 +16,7 @@
 .mfMain {
   /*---background phone image--*/
   position: relative;
-  z-index: -4;
+  z-index: 0;
   width: 100%;
 }
 
@@ -26,19 +26,12 @@
   position: relative;
 }
 
-/* -------  main background
-#mfBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -5;
-  margin: 0;
-  width: 100%;
-} 
-
-body {
-  background-image: lightgreen;
-} ------- */
+.mfBackground {
+  background-image: url("../img/7-motiv8-fwd/7-mf-imgs/mf-background@1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 
 .projType {
   /* --- UI DESIGN --- */
@@ -171,10 +164,8 @@ Medium devices (640px and larger)
 
   .mfMain {
     /*---background phone image--*/
-    position: relative;
+    position: absolute;
     top: -32px;
-    z-index: -4;
-    width: 100%;
   }
 
   #mf .container {
@@ -307,7 +298,7 @@ Large devices (1024px or larger)
     position: relative;
     top: -52px;
     margin: 0;
-    z-index: -4;
+    z-index: 0;
     width: 100%;
   }
 
@@ -440,7 +431,7 @@ X-large devices (1440px or larger)
     position: relative;
     top: -200px;
     margin: 0;
-    z-index: -4;
+    z-index: 0;
     width: 100%;
   }
 
